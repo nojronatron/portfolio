@@ -74,37 +74,34 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - present",
+        "company": "Citrix Systems, Inc",
+        "title": "Software Test Engineer II",
+        "years": "April 2014 - July 2017",
         "mainTech": [
-          "Angular 8/9/10"
+          "Test Planning, Execution, Reporting and Systems Admin."
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          ".NET Core",
-          "SignalR",
-          "Angular Material"
+          "Visual Studio 2012, 2016",
+          "Azure WebApp",
+          "PyCharm",
+          "Selenium",
+          ".NET Framework"
         ]
       },
       {
-        "company": "Serros Solutions",
-        "title": "Intern",
-        "years": "01.2018 - 09.2019",
+        "company": "Citrix Systems, Inc",
+        "title": "Engineering Systems Administrator II",
+        "years": "2006 - 2014",
         "mainTech": [
-          "Angular 7/8"
+          "Manage servers and systems for the local Engineering Team."
         ],
         "technologies": [
-          "RxJS",
-          "Django",
-          "PHP",
-          "JavaScript",
-          "DHTMLX Gantt"
+          "Windows Server 2008 through 2012 R2",
+          "PowerShell",
+          "Active Directory",
+          "DHCP, DNS, and WINS infrastructure",
+          "Hardware and software deployment",
+          "Disaster Recover specification and management"
         ]
       }
     ]
