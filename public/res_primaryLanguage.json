@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Jon Rumsey. Fictional person for preview purposes :) I'm working with newest front-end frameworks like Angular, React and Vue. What you are seeing now is portfolio template from Code Fellows. If you like this portfolio template, make sure to ⭐ the repository to make it more recognizable for other users. Thank you 💜",
+      "description_header": "Hi, I'm Jon",
+      "description": "👋 I am a Software Developer with a certificate in Software Test Engineering, an AA in Network Technologies, and am an experienced Windows Systems Administrator. I've been learning C# and Python in my free time and am currently a student at Code Fellows in Seatte, WA, studying to become a javascript full-stack developer.👋",
       "section_name": {
         "about": "About me",
         "projects": "Projects",

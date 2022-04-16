@@ -1,7 +1,7 @@
 {
     "basic_info": {
       "name": "Jon Rumsey",
-      "titles": [ "Software Developer" ],
+      "titles": [ "Software Dev and Continuous Learnveloper" ],
       "social": [
         {
           "name": "github",
@@ -14,7 +14,7 @@
           "class": "fab fa-linkedin"
         }
       ],
-      "image": "myProfile.jpg"
+      "image": "Jon April 2022_100x100.jpg"
     },
     "skills": {
       "icons": [
