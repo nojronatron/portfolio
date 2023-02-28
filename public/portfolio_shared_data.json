@@ -1,48 +1,84 @@
 {
-    "basic_info": {
-      "name": "Jon Rumsey",
-      "titles": [ "Software Dev and Continuous Learnveloper" ],
-      "social": [
-        {
-          "name": "github",
-          "url": "https://github.com/nojronatron",
-          "class": "fab fa-github"
-        },
-        {
-          "name": "linkedin",
-          "url": "https://www.linkedin.com/in/jonathan-rumsey-wa",
-          "class": "fab fa-linkedin"
-        }
-      ],
-      "image": "Jon April 2022_100x100.jpg"
-    },
-    "skills": {
-      "icons": [
-        {
-          "name": "HTML 5",
-          "class": "devicon-html5-plain",
-          "level": "95"
-        },
-        {
-          "name": "CSS 3",
-          "class": "devicon-css3-plain",
-          "level": "95"
-        },
-        {
-          "name": "JavaScript",
-          "class": "devicon-javascript-plain",
-          "level": "70"
-        },
-        {
-          "name": "Bootstrap",
-          "class": "devicon-bootstrap-plain",
-          "level": "85"
-        },
-        {
-          "name": "C#",
-          "class": "devicon-csharp-plain",
-          "level": "65"
-        }
-      ]
-    }
+  "basic_info": {
+    "name": "Jon Rumsey",
+    "titles": [
+      "Software Developer",
+      "Software Test Engineer",
+      "Systems Administrator",
+      "Ham Radio",
+      "Community Volunteer"
+    ],
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/nojronatron",
+        "class": "fab fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/jonathan-rumsey-wa",
+        "class": "fab fa-linkedin"
+      }
+    ],
+    "image": "jon-rainier-400x400.jpg"
+  },
+  "skills": {
+    "icons": [
+      {
+        "name": "HTML 5",
+        "class": "devicon-html5-plain",
+        "level": "95"
+      },
+      {
+        "name": "CSS 3",
+        "class": "devicon-css3-plain",
+        "level": "90"
+      },
+      {
+        "name": "JavaScript",
+        "class": "devicon-javascript-plain",
+        "level": "85"
+      },
+      {
+        "name": "Node.js",
+        "class": "devicon-nodejs-plain",
+        "level": "80"
+      },
+      {
+        "name": "Bootstrap",
+        "class": "devicon-bootstrap-plain",
+        "level": "75"
+      },
+      {
+        "name": "C#",
+        "class": "devicon-csharp-plain",
+        "level": "70"
+      },
+      {
+        "name": "Python 3",
+        "class": "devicon-python-plain",
+        "level": "65"
+      },
+      {
+        "name": "MS SQL",
+        "class": "devicon-microsoftsqlserver-plain",
+        "level": "60"
+      },
+      {
+        "name": "NoSQL",
+        "class": "devicon-mongodb-plain",
+        "level": "55"
+      },
+      {
+        "name": "Azure",
+        "class": "devicon-azure-plain",
+        "level": "50"
+      },
+      {
+        "name": "Linux",
+        "class": "devicon-linux-plain",
+        "level": "50"
+      }
+    ]
   }
+}
