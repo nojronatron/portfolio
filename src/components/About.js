@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import nodejsIcon from "@iconify/icons-logos/nodejs";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import dotnetIcon from "@iconify/icons-logos/dotnet";
+import javaIcon from "@iconify/icons-logos/java";
 
 class About extends Component {
   render() {
@@ -22,16 +23,18 @@ class About extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
-            <div className="col-md-4 mb-5 center">
-              <div className="polaroid">
-                <span style={{ cursor: "auto" }}>
+            <div className="col-md-4 mb-5">
+              <div>
                   <img
-                    height="250px"
+                    height="400px"
+                    width="400px"
                     src={profilepic}
-                    alt="Avatar placeholder"
+                    alt="Jon hiking near Mt.Rainier in Washington State."
                   />
+              </div>
+                <span style={{ cursor: "auto" }}>
                   <Icon
-                    icon={angularIcon}
+                    icon={nodejsIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
@@ -39,11 +42,14 @@ class About extends Component {
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={dotnetIcon}
+                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
+                  />
+                  <Icon
+                    icon={javaIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
-              </div>
             </div>
 
             <div className="col-md-8 center">
