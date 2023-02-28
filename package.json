@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@rcaferati/wac": "^1.0.0",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-ga": "^3.3.1",
