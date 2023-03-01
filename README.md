@@ -1,13 +1,17 @@
 # Jon's Portfolio Site
 
-This site began as a lab assignment while attending Code Fellows in Seattle, WA. For the short term this site will be the target of the assignment features and content as defined on a Trello board.
+This site began as a lab assignment while attending Code Fellows in Seattle, WA. It is now a handy storage space to showcase my projects, interests, and experiences.
 
-Longer term this site will be used to showcase my work as I gain skills and expertice an many aspects of software development.
+## Published To Netlify
 
-## Published On Netlify
+Check out the live site on [Netlify](https://portfolio-jon-rumsey.netlify.app).
 
-Check out the life, automated build and deploy site on [Netlify](https://teal-fox-4de6a5.netlify.app/)  
+## Starter Code Source
+
+The starter code for this project was cloned from project [Dorota1997/react-frontend-dev-portfolio](https://github.com/Dorota1997/react-frontend-dev-portfolio), and customized from there. Thanks to Dorota Gil, great work!
 
 ## Contributors
 
+Content: Jon Rumsey
 Lead Developer: Jon Rumsey
+Test Engineer: Jon Rumsey
