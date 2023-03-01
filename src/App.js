@@ -28,23 +28,17 @@ class App extends Component {
   };
 
   swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
+    var pickedLangIconId = window.$primaryLanguageIconId;
     document
       .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
+      .removeAttribute("filter", "brightness(80%)");
   };
 
   componentDidMount = () => {
     this.loadSharedData();
     this.applyPickedLanguage(
       window.$primaryLanguage,
-      window.$secondaryLanguageIconId
+      // window.$secondaryLanguageIconId
     );
   };
 
