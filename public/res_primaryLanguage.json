@@ -14,9 +14,7 @@
       "title": "LingoBing JS",
       "startDate": "2022",
       "description": "Working with Ryan Schafer on our spare time, we re-wrote the LingoBingo project using React. We are are finishing up the first part of a v.1 release that implements MERN-stack design pattern, and will follow that with an add-on UI for Presenters to add their own words and generate a web-link to their custom-defined LingoBingo boards.",
-      "images": [
-        "images/portfolio/lbjs/lbjs-lets-play-bingo.jpg"
-      ],
+      "images": ["images/portfolio/lbjs/lbjs-lets-play-bingo.jpg"],
       "url": "https://eb-lingobingo.netlify.app/",
       "technologies": [
         {
@@ -37,9 +35,7 @@
       "title": "EZ-PC Shopper",
       "startDate": "2022",
       "description": "Final project for CodeFellows Code 201 class, helps site visitors build and buy a computer system from the ground up. This project challenged me to refine my bug finding and squashing abilities, acquire a deeper understanding of CSS 3.0, and experience project management by guiding meetings, project design, and pair-programming with my team mates.",
-      "images": [
-        "images/portfolio/EZPCShopper/EZ-PC-Shopper screenshot.jpg"
-      ],
+      "images": ["images/portfolio/EZPCShopper/EZ-PC-Shopper screenshot.jpg"],
       "url": "https://it-s-not-a-bug-it-s-a-feature.github.io/EZ-PC-Shopper/",
       "technologies": [
         {
@@ -83,9 +79,7 @@
       "title": "LingoBingo",
       "startDate": "2019",
       "description": "One of the first web apps I worked on using C# DotNET Blazor Web Assembly. The original idea came from a webinar on audience engagement by Cindy Huggett, where she suggested presenters play Buzzword Bingo so audience members could yell BINGO when they match 5 presenter-planned buzzwords in a row. The project has been through many version, from Console application to what it is now - a live, playable Azure WebApp. I learned a lot about C#, Dot NET, and web development, which made it clear to me I wanted to learn more about building capable, fun websites!",
-      "images": [
-        "images/portfolio/LingoBingo/LingoBingo screenshot.jpg"
-      ],
+      "images": ["images/portfolio/LingoBingo/LingoBingo screenshot.jpg"],
       "url": "https://bit.ly/3lgqSWe",
       "technologies": [
         {
@@ -122,9 +116,7 @@
       "company": "Citrix Systems, Inc",
       "title": "Engineering Systems Administrator II",
       "years": "2006 - 2014",
-      "mainTech": [
-        "Manage dev-test lab, networks, Active Directory."
-      ],
+      "mainTech": ["Manage dev-test lab, networks, Active Directory."],
       "technologies": [
         "Windows Server 2008 through 2012 R2",
         "PowerShell",
@@ -138,9 +130,7 @@
       "company": "Cascadia College",
       "title": "Helpdesk Support",
       "years": "2003, 2004",
-      "mainTech": [
-        "Technical support, student resource, admin assistant."
-      ],
+      "mainTech": ["Technical support, student resource, admin assistant."],
       "technologies": [
         "Technical Support",
         "Helpdesk application operator",
