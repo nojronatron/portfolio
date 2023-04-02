@@ -16,8 +16,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - name: Prettify code
-        uses: creyD/prettier_action@v4.2
+      - name: Prettier Action
+        uses: creyD/prettier_action@v4.3
         with:
           dry: true
-          prettier_options: **/*.{js,scss,css,json} --check
+          prettier_options: --check **/*.{js,scss,css,json}
