@@ -38,14 +38,12 @@ class Footer extends Component {
               </div>
             </div>
             <div className='col'>
-              <div className='copyright py-4 text-center'>
+              <div className='copyright py-3 text-center'>
                 <div className='container'>
-                  <small>
-                    Revision {' Feb 2023 - '}
-                    {this.props.sharedBasicInfo
-                      ? this.props.sharedBasicInfo.name
-                      : '???'}
-                  </small>
+                  Revision {' May 2023 - '}
+                  {this.props.sharedBasicInfo
+                    ? this.props.sharedBasicInfo.name
+                    : '???'}
                 </div>
               </div>
             </div>
