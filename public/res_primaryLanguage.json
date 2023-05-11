@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "description_header": "Hi, I'm Jon",
-    "description": "👋 I am a Software Developer with certificates in advanced Java Software Development and Software Test Engineering, and an AA in Network Technologies. As a Windows Systems Administrator I learned PowerShell to simplify my tasks, and started gaining interest in software development and testing. I have build pet projects in MERN-stack, C#, Java, and Python in my free time, and I enjoy working on diverse, engaged teams working on solving problems with technology.👋",
+    "description": "👋 I am a Software Developer with certificates in advanced Java Software Development and Software Test Engineering, and an AA in Network Technologies. As a Windows Systems Administrator I learned PowerShell to simplify my tasks, and started gaining interest in software development and testing. Developing software solutions for desktop and web applications is a fulfilling challenge, especially in C#, Java, and the MERN-stack. I enjoy working on diverse, engaged teams, helping to solve problems with technology.👋",
     "section_name": {
       "about": "About me",
       "projects": "Projects",
@@ -10,6 +10,31 @@
     }
   },
   "projects": [
+    {
+      "title": "Coordinate Conversion Utility",
+      "startDate": "2019",
+      "description": "As an amateur radio operator I need to be aware of several different coordinate systems to identify where I am, and where other operators might be. As a software developer I want to develop an application that will help me convert from 4 common coordinate system notations. Many hams before me have explored solving coordinate conversion in software however I enjoyed the challenge and the achievement.",
+      "images": [
+        "images/portfolio/CoordinateConverter/grid-commands-with-conversion-outputs.jpg",
+        "images/portfolio/CoordinateConverter/dd-commands-with-conversion-outputs.jpg",
+        "images/portfolio/CoordinateConverter/unittests-full-suite-of-componentized-tests.jpg"
+      ],
+      "url": "https://github.com/nojronatron/CoordinateConversionUtility",
+      "technologies": [
+        {
+          "class": "devicon-dot-net-plain",
+          "name": "DotNET 4"
+        },
+        {
+          "class": "devicon-dot-net-plain",
+          "name": "DotNET 6"
+        },
+        {
+          "class": "devicon-csharp-plain",
+          "name": "C#"
+        }
+      ]
+    },
     {
       "title": "LingoBing JS",
       "startDate": "2022",
@@ -103,13 +128,13 @@
       ],
       "technologies": [
         "Visual Studio 2012, 2016",
-        "Azure WebApp",
         "PyCharm",
+        "Azure WebApps and VMs",
         "Selenium",
         ".NET Framework",
         "Python 3.x",
         "Jira",
-        "BitBucket"
+        "BitBucket and Git"
       ]
     },
     {
@@ -127,6 +152,20 @@
       ]
     },
     {
+      "company": "Citrix Systems, Inc",
+      "title": "Computer Lab Technician - Intern",
+      "years": "2004 - 2006",
+      "mainTech": ["Build-fix computers, maintain lab and network."],
+      "technologies": [
+        "Windows Server 2000, 2008",
+        "Windows Vista, 7",
+        "TCP/IP, DHCP, DNS, WINS",
+        "Hardware and software deployment",
+        "Build, service computer hardware",
+        "Automate build computer config"
+      ]
+    },
+    {
       "company": "Cascadia College",
       "title": "Helpdesk Support",
       "years": "2003, 2004",
@@ -138,7 +177,7 @@
         "Windows XP",
         "Active Directory",
         "Server room hardware management",
-        "Disaster Recover specification and management"
+        "Disaster Recover spec and mgmt"
       ]
     }
   ]

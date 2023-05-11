@@ -2,10 +2,10 @@
   "basic_info": {
     "name": "Jon Rumsey",
     "titles": [
-      "Software Developer",
-      "Software Test Engineer",
-      "Systems Administrator",
-      "Ham Radio",
+      "Software Developer | ",
+      "Software Test Engineer | ",
+      "Systems Administrator | ",
+      "Ham Radio Enthusiast | ",
       "Community Volunteer"
     ],
     "social": [
@@ -32,12 +32,12 @@
       {
         "name": "CSS 3",
         "class": "devicon-css3-plain",
-        "level": "90"
+        "level": "85"
       },
       {
         "name": "JavaScript",
         "class": "devicon-javascript-plain",
-        "level": "85"
+        "level": "90"
       },
       {
         "name": "Node.js",
@@ -50,19 +50,19 @@
         "level": "75"
       },
       {
+        "name": "React",
+        "class": "devicon-react-plain",
+        "level": "60"
+      },
+      {
         "name": "C#",
         "class": "devicon-csharp-plain",
         "level": "70"
       },
       {
-        "name": "Python 3",
-        "class": "devicon-python-plain",
-        "level": "65"
-      },
-      {
-        "name": "MS SQL",
-        "class": "devicon-microsoftsqlserver-plain",
-        "level": "60"
+        "name": "Linux",
+        "class": "devicon-linux-plain",
+        "level": "30"
       },
       {
         "name": "NoSQL",
@@ -70,14 +70,24 @@
         "level": "55"
       },
       {
+        "name": "Python 3",
+        "class": "devicon-python-plain",
+        "level": "25"
+      },
+      {
+        "name": "MS SQL",
+        "class": "devicon-microsoftsqlserver-plain",
+        "level": "60"
+      },
+      {
         "name": "Azure",
         "class": "devicon-azure-plain",
         "level": "50"
       },
       {
-        "name": "Linux",
-        "class": "devicon-linux-plain",
-        "level": "50"
+        "name": "Netlify",
+        "class": "devicon-netlify-plain",
+        "level": "40"
       }
     ]
   }
