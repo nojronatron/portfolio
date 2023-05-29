@@ -89,9 +89,12 @@
     {
       "title": "Salmon Cookies",
       "startDate": "2022",
-      "description": "Code Fellows Code 201 Lab Project Cookie Stand provided an opportunity to put together JavaScript, HTML 5, CSS 3.0 to meet the goal of presenting a new website for a ficticious, growing business. Using DOM Manipulation to edit the UI, HTML 5 Forms, and CSS features to manage images, content, and coloring style were the focus features. I enjoyed working on this project!",
+      "description": "Code Fellows Code 201 Lab Project Cookie Stand provided an opportunity to put together JavaScript, HTML 5, CSS 3.0 to meet the goal of presenting a new website for a ficticious, growing business. The website uses HTML 5, CSS 3, and JavaScript. DOM manipulation is used to edit the UI to respond to user inputs and changes in stored data. HTML Forms and other structural tags, along with CSS features, were chosen carefully to make the site responsive, supporting phone-sized viewports. Managing images, content, and style were the focus features of this project, and I am proud of my very first JavaScript-enabled website project.",
       "images": [
-        "images/portfolio/SalmonCookies/salmon-cookies screenshot.jpg"
+        "images/portfolio/SalmonCookies/salmon-cookies-home-page.jpg",
+        "images/portfolio/SalmonCookies/salmon-cookies-home-page-footer.jpg",
+        "images/portfolio/SalmonCookies/salmon-cookies-home-page-phone-sized.jpg",
+        "images/portfolio/SalmonCookies/salmon-cookies-sales-report-custom-entry-form.jpg"
       ],
       "url": "https://nojronatron.github.io/cookie-stand/",
       "technologies": [
