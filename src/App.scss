@@ -97,9 +97,8 @@ header .nav {
 }
 
 .skills-tile {
-  background-color: transparentize(#f8f5f4, 0.95);
+  background-color: rgba(248, 245, 244, 0.2);
   padding: 10px 10px 5px 10px;
-  width: 100px;
   margin: 5px 0 5px 0;
   border-radius: 8px;
 }
@@ -417,12 +416,12 @@ header h1 {
   min-height: 200px;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 10%;
+  padding-bottom: 4%;
 }
 
 .section-title {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 4em;
+  padding-bottom: 4em;
   font: 18px/24px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
