@@ -15,7 +15,9 @@
       "about": "About me",
       "projects": "Projects",
       "skills": "Skills",
-      "experience": "Experience"
+      "experience": "Experience",
+      "codingLanguages": "Languages",
+      "tools": "Tools"
     }
   },
   "projects": [
@@ -135,9 +137,7 @@
       "company": "Citrix Systems, Inc",
       "title": "Software Test Engineer II",
       "years": "April 2014 - July 2017",
-      "mainTech": [
-        "Test Planning, Execution, Reporting, and Systems Admining."
-      ],
+      "mainTech": ["Plan, Run, Report Tests, Bugs. Sys-Admining."],
       "technologies": [
         "Visual Studio 2012, 2016",
         "PyCharm",
@@ -155,12 +155,12 @@
       "years": "2006 - 2014",
       "mainTech": ["Manage dev-test lab, networks, Active Directory."],
       "technologies": [
-        "Windows Server 2008 through 2012 R2",
+        "Windows Server 2008, 2012 R2",
         "PowerShell",
         "Active Directory",
-        "DHCP, DNS, and WINS infrastructure",
-        "Hardware and software deployment",
-        "Disaster Recover specification and management"
+        "DHCP, DNS, and WINS Infrastructure",
+        "Spec, Purchase, Install Servers, Storage, Network",
+        "Disaster Recovery"
       ]
     },
     {
@@ -171,25 +171,25 @@
       "technologies": [
         "Windows Server 2000, 2008",
         "Windows Vista, 7",
-        "TCP/IP, DHCP, DNS, WINS",
-        "Hardware and software deployment",
-        "Build, service computer hardware",
-        "Automate build computer config"
+        "Manage TCP/IP, DHCP, DNS, WINS",
+        "Deploy Software and Hardware",
+        "Build, Support, Service PCs, Servers",
+        "Automate PC Builds"
       ]
     },
     {
       "company": "Cascadia College",
       "title": "Helpdesk Support",
       "years": "2003, 2004",
-      "mainTech": ["Technical support, student resource, admin assistant."],
+      "mainTech": ["Tech support to staff, students, and IT generalist."],
       "technologies": [
         "Technical Support",
-        "Helpdesk application operator",
+        "Helpdesk Application",
         "Windows Server 2000",
         "Windows XP",
         "Active Directory",
-        "Server room hardware management",
-        "Disaster Recover spec and mgmt"
+        "Server Room Hardware Management",
+        "Disaster Recovery"
       ]
     }
   ]
