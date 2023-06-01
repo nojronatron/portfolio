@@ -73,6 +73,18 @@
       {
         "name": "Trello",
         "icon": "bi:trello"
+      },
+      {
+        "name": "Netlify",
+        "icon": "logos:netlify-icon"
+      },
+      {
+        "name": "Azure",
+        "icon": "devicon:azure"
+      },
+      {
+        "name": "MS SQL",
+        "icon": "ph:file-sql"
       }
     ]
   }
