@@ -17,8 +17,8 @@ class About extends Component {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;
       // var about = this.props.resumeBasicInfo.description;
-      var about = this.props.resumeBasicInfo.description.map((element) => {
-        return <div>{element}</div>;
+      var about = this.props.resumeBasicInfo.description.map((element, idx) => {
+        return <div key={idx}>{element}</div>;
       });
     }
 
