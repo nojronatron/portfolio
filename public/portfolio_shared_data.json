@@ -22,5 +22,70 @@
     ],
     "image": "jon-rainier-400x400.jpg"
   },
-  "skills": {}
+  "skills": {
+    "codingLanguages": [
+      {
+        "name": "HTML 5",
+        "icon": "devicon-html5"
+      },
+      {
+        "name": "CSS 3",
+        "icon": "devicon-css3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "devicon-javascript"
+      },
+      {
+        "name": "Java",
+        "icon": "devicon-java"
+      },
+      {
+        "name": "C#",
+        "icon": "vscode-icons:file-type-csharp"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "icon": "devicon-git"
+      },
+      {
+        "name": "VS Code",
+        "icon": "vscode-icons:file-type-vscode"
+      },
+      {
+        "name": "IDEA",
+        "icon": "devicon:intellij"
+      },
+      {
+        "name": "Visual Studio",
+        "icon": "skill-icons:visualstudio-light"
+      },
+      {
+        "name": "React",
+        "icon": "devicon:react"
+      },
+      {
+        "name": "Node.js",
+        "icon": "devicon:nodejs"
+      },
+      {
+        "name": "Trello",
+        "icon": "bi:trello"
+      },
+      {
+        "name": "Netlify",
+        "icon": "logos:netlify-icon"
+      },
+      {
+        "name": "Azure",
+        "icon": "devicon:azure"
+      },
+      {
+        "name": "MS SQL",
+        "icon": "ph:file-sql"
+      }
+    ]
+  }
 }
