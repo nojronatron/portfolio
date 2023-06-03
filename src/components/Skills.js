@@ -3,9 +3,6 @@ import { Icon } from '@iconify/react';
 
 class Skills extends Component {
   render() {
-    let codingIcons;
-    let toolsIcons;
-
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
       var codeSkillsSection =
         this.props.resumeBasicInfo.section_name.codingLanguages;
@@ -13,7 +10,7 @@ class Skills extends Component {
     }
 
     if (this.props.sharedSkills !== undefined) {
-      codingIcons = this.props.sharedSkills.codingLanguages.map(function (
+      var codingIcons = this.props.sharedSkills.codingLanguages.map(function (
         codeLang,
         idx
       ) {
@@ -42,7 +39,7 @@ class Skills extends Component {
     }
 
     if (this.props.sharedSkills !== undefined) {
-      toolsIcons = this.props.sharedSkills.tools.map(function (tool, idx) {
+      var toolsIcons = this.props.sharedSkills.tools.map(function (tool, idx) {
         return (
           <li className='mx-3' key={idx} style={{ display: 'inline-block' }}>
             <div className='text-center skills-tile'>
