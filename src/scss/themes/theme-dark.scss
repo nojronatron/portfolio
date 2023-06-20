@@ -9,11 +9,6 @@ body[data-theme='dark'] {
     color: white;
   }
 
-  .header-icon {
-    color: #3c342c;
-    opacity: 0.8;
-  }
-
   .slider-image {
     border: 5px solid #8c8c8c;
   }
@@ -34,6 +29,9 @@ body[data-theme='dark'] {
   header {
     background-color: #494949;
     h1 {
+      color: white;
+    }
+    .title-container {
       color: white;
     }
   }
