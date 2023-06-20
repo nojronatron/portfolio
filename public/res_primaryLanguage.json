@@ -22,47 +22,47 @@
   },
   "projects": [
     {
-      "title": "Coordinate Conversion Utility",
-      "startDate": "2019",
-      "description": "As an amateur radio operator I need to be aware of several different coordinate systems to identify where I am, and where other operators might be. As a software developer I want to develop an application that will help me convert from 4 common coordinate system notations. Many hams before me have explored solving coordinate conversion in software however I enjoyed the challenge and the achievement.",
+      "title": "Markdown Table of Contents",
+      "startDate": "2023",
+      "description": "Some markdown files can get rather large with lots of headings, and finding information within can get difficult. With a table of contents it is easier to find the information you are looking for. With this extension, you can generate a table of contents for your markdown file, and keep it up to date as you add, remove, or change headings.",
       "images": [
-        "images/portfolio/CoordinateConverter/grid-commands-with-conversion-outputs.jpg",
-        "images/portfolio/CoordinateConverter/dd-commands-with-conversion-outputs.jpg",
-        "images/portfolio/CoordinateConverter/unittests-full-suite-of-componentized-tests.jpg"
+        "images/portfolio/CreateTOC/markdown-toc-create-toc-video.gif",
+        "images/portfolio/CreateTOC/markdown-toc-md-file-with-headings.png",
+        "images/portfolio/CreateTOC/markdown-toc-md-file-updated-with-toc.png"
       ],
-      "url": "https://github.com/nojronatron/CoordinateConversionUtility",
+      "url": "https://github.com/nojronatron/markdown-toc",
       "technologies": [
         {
-          "class": "devicon-dot-net-plain",
-          "name": "DotNET 4"
+          "class": "devicon-vscode-plain colored",
+          "name": "VSCode Extensions API"
         },
         {
-          "class": "devicon-dot-net-plain",
-          "name": "DotNET 6"
+          "class": "devicon-javascript-plain colored",
+          "name": "JavaScript"
         },
         {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
+          "class": "devicon-mocha-plain colored",
+          "name": "Mocha Unit Tests"
         }
       ]
     },
     {
       "title": "LingoBing JS",
       "startDate": "2022",
-      "description": "Working with Ryan Schafer on our spare time, we re-wrote the LingoBingo project using React. We are are finishing up the first part of a v.1 release that implements MERN-stack design pattern, and will follow that with an add-on UI for Presenters to add their own words and generate a web-link to their custom-defined LingoBingo boards.",
+      "description": "Working in our spare time, Ryan Shafer and I re-wrote the LingoBingo project using React. We are are finishing up the first part of a v.1 release that implements MERN-stack design pattern, and will follow that with an add-on UI for Presenters to add their own words and generate a web-link to their custom-defined LingoBingo boards.",
       "images": ["images/portfolio/lbjs/lbjs-lets-play-bingo.jpg"],
       "url": "https://eb-lingobingo.netlify.app/",
       "technologies": [
         {
-          "class": "devicon-javascript-plain",
+          "class": "devicon-javascript-plain colored",
           "name": "JavaScript"
         },
         {
-          "class": "devicon-react-plain",
+          "class": "devicon-react-original-wordmark colored",
           "name": "React.js"
         },
         {
-          "class": "devicon-nodejs-plain",
+          "class": "devicon-nodejs-plain-wordmark colored",
           "name": "Node.js"
         }
       ]
@@ -75,15 +75,15 @@
       "url": "https://it-s-not-a-bug-it-s-a-feature.github.io/EZ-PC-Shopper/",
       "technologies": [
         {
-          "class": "devicon-javascript-plain",
+          "class": "devicon-javascript-plain colored",
           "name": "JavaScript"
         },
         {
-          "class": "devicon-html5-plain",
+          "class": "devicon-html5-plain-wordmark colored",
           "name": "HTML 5"
         },
         {
-          "class": "devicon-css3-plain",
+          "class": "devicon-css3-plain-wordmark colored",
           "name": "CSS 3.0"
         }
       ]
@@ -101,15 +101,15 @@
       "url": "https://nojronatron.github.io/cookie-stand/",
       "technologies": [
         {
-          "class": "devicon-javascript-plain",
+          "class": "devicon-javascript-plain colored",
           "name": "JavaScript"
         },
         {
-          "class": "devicon-html5-plain",
+          "class": "devicon-html5-plain-wordmark colored",
           "name": "HTML 5"
         },
         {
-          "class": "devicon-css3-plain",
+          "class": "devicon-css3-plain-wordmark colored",
           "name": "CSS 3.0"
         }
       ]
@@ -122,12 +122,37 @@
       "url": "https://bit.ly/3lgqSWe",
       "technologies": [
         {
-          "class": "devicon-csharp-plain",
+          "class": "devicon-csharp-plain colored",
           "name": "C#"
         },
         {
-          "class": "devicon-dot-net-plain",
+          "class": "devicon-dot-net-plain-wordmark colored",
           "name": "Blazor"
+        }
+      ]
+    },
+    {
+      "title": "Coordinate Converter",
+      "startDate": "2019",
+      "description": "As an amateur radio operator I need to be aware of several different coordinate systems to identify where I am, and where other operators might be. As a software developer I want to develop an application that will help me convert from 4 common coordinate system notations. Many hams before me have explored solving coordinate conversion in software however I enjoyed the challenge and the achievement.",
+      "images": [
+        "images/portfolio/CoordinateConverter/grid-commands-with-conversion-outputs.jpg",
+        "images/portfolio/CoordinateConverter/dd-commands-with-conversion-outputs.jpg",
+        "images/portfolio/CoordinateConverter/unittests-full-suite-of-componentized-tests.jpg"
+      ],
+      "url": "https://github.com/nojronatron/CoordinateConversionUtility",
+      "technologies": [
+        {
+          "class": "devicon-dot-net-plain-wordmark colored",
+          "name": "DotNET 4"
+        },
+        {
+          "class": "devicon-dot-net-plain-wordmark colored",
+          "name": "DotNET 6"
+        },
+        {
+          "class": "devicon-csharp-plain colored",
+          "name": "C#"
         }
       ]
     }

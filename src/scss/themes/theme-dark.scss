@@ -9,11 +9,6 @@ body[data-theme='dark'] {
     color: white;
   }
 
-  .header-icon {
-    color: #3c342c;
-    opacity: 0.8;
-  }
-
   .slider-image {
     border: 5px solid #8c8c8c;
   }
@@ -36,6 +31,9 @@ body[data-theme='dark'] {
     h1 {
       color: white;
     }
+    .title-container {
+      color: white;
+    }
   }
 
   #about {
@@ -50,6 +48,10 @@ body[data-theme='dark'] {
       background: #6d6d6d;
       color: white;
     }
+  }
+
+  .themed-boxshadow {
+    box-shadow: '8px 10px 5px 0px #a59753';
   }
 
   #portfolio {
