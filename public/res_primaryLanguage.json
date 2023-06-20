@@ -130,7 +130,8 @@
           "name": "Blazor"
         }
       ]
-    },    {
+    },
+    {
       "title": "Coordinate Converter",
       "startDate": "2019",
       "description": "As an amateur radio operator I need to be aware of several different coordinate systems to identify where I am, and where other operators might be. As a software developer I want to develop an application that will help me convert from 4 common coordinate system notations. Many hams before me have explored solving coordinate conversion in software however I enjoyed the challenge and the achievement.",

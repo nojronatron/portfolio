@@ -143,9 +143,9 @@ class Header extends Component {
           <div className='col-md-12'>
             <div>
               <img
-              className='header-image'
-              src='images/jon-happy-shot-apr-22.jpg'
-              alt='Jon smiling at his computer desk in 2022'
+                className='header-image'
+                src='images/jon-happy-shot-apr-22.jpg'
+                alt='Jon smiling at his computer desk in 2022'
               />
               <br />
               <h1 className='mb-0'>{name}</h1>
