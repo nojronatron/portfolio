@@ -50,6 +50,10 @@ body[data-theme='dark'] {
     }
   }
 
+  .themed-boxshadow {
+    box-shadow: '8px 10px 5px 0px #a59753';
+  }
+
   #portfolio {
     background: #5b5b5b;
     .section-title {
