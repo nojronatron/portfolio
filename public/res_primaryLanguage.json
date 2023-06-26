@@ -71,7 +71,11 @@
       "title": "EZ-PC Shopper",
       "startDate": "2022",
       "description": "Final project for CodeFellows Code 201 class, helps site visitors build and buy a computer system from the ground up. This project challenged me to refine my bug finding and squashing abilities, acquire a deeper understanding of CSS 3.0, and experience project management by guiding meetings, project design, and pair-programming with my team mates.",
-      "images": ["images/portfolio/EZPCShopper/EZ-PC-Shopper screenshot.jpg"],
+      "images": [
+        "images/portfolio/EZPCShopper/ez-pc-shopper-homepage.jpg",
+        "images/portfolio/EZPCShopper/ez-pc-custom-hamburger-flyout-menu.jpg",
+        "images/portfolio/EZPCShopper/EZ-PC-Shopper screenshot.jpg"
+      ],
       "url": "https://it-s-not-a-bug-it-s-a-feature.github.io/EZ-PC-Shopper/",
       "technologies": [
         {
