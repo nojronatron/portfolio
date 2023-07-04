@@ -1,4 +1,5 @@
 import React from 'react';
+import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.scss';
 import App from './App';
@@ -12,5 +13,9 @@ window.$primaryLanguageIconId = 'primary-lang-icon';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<App />);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
 serviceWorker.register();
