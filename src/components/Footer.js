@@ -40,7 +40,7 @@ class Footer extends Component {
             <div className='col'>
               <div className='copyright py-3 text-center'>
                 <div className='container'>
-                  Revision {' June 2023 - '}
+                  Revision {' July 2023 - '}
                   {this.props.sharedBasicInfo
                     ? this.props.sharedBasicInfo.name
                     : '???'}
