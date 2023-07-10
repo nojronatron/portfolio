@@ -68,6 +68,34 @@
       ]
     },
     {
+      "title": "Bigfoot Bib Report Form",
+      "startDate": "2021, 2022, 2023",
+      "description": "Destination Trail holds a Bigfoot 200 ultramarathon yearly in SW Washington State. Hams from all around Washington and Oregon volunteer to provide communications in the Gifford-Pinchot Nat'l Forest, providing runner locations, tactical, and emergency communications. This form assists Aid Station HAMs in tracking runners and sending their bib locations to the Net Control Station. Use of accessible colors and fonts, and a responsive UI make this form easy to use. Tabbing is organized and highlights are used to ID currently selected field. Subject line is automatically updated with common data. The form allows adding a short status message, and all data can be stored to a text file for backup or to sneaker net to a Winlink station for transmission to Net Control.",
+      "images": [
+        "images/portfolio/BfBibReportForm/initial-page-load-600px.jpg",
+        "images/portfolio/BfBibReportForm/6-change-aid-station-changes-subject-600px.jpg",
+        "images/portfolio/BfBibReportForm/6b-change-aid-station-changes-subject-600px.jpg",
+        "images/portfolio/BfBibReportForm/7-8-9-bib-time-yesterday-600px.jpg",
+        "images/portfolio/BfBibReportForm/11-newest-entry-always-on-top-row-600px.jpg",
+        "images/portfolio/BfBibReportForm/13-save-big-data-to-json-text-file-for-easy-transport-600px.jpg"
+      ],
+      "url": "https://github.com/nojronatron/Bigfoot-Bib-Report-WL-Form",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain colored",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-html5-plain-wordmark colored",
+          "name": "HTML 5"
+        },
+        {
+          "class": "devicon-css3-plain-wordmark colored",
+          "name": "CSS 3.0"
+        }
+      ]
+    },
+    {
       "title": "EZ-PC Shopper",
       "startDate": "2022",
       "description": "Final project for CodeFellows Code 201 class, helps site visitors build and buy a computer system from the ground up. This project challenged me to refine my bug finding and squashing abilities, acquire a deeper understanding of CSS 3.0, and experience project management by guiding meetings, project design, and pair-programming with my team mates.",
