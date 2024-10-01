@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Projects from './Projects';
-import Skills from './Skills';
-import Experience from './Experience';
+import Projects from './Projects.jsx';
+import Skills from './Skills.jsx';
+import Experience from './Experience.jsx';
 
 class Home extends Component {
   render() {

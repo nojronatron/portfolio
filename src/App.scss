@@ -1,11 +1,8 @@
-@import '/src/scss/themes/theme-dark.scss';
-@import '/src/scss/themes/theme-light.scss';
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css');
+@use '/src/scss/themes/theme-dark.scss';
+@use '/src/scss/themes/theme-light.scss';
 
 html {
   font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
 }
@@ -17,7 +14,7 @@ html {
 }
 
 .title-container {
-  height: 50px;
+  height: 50vh;
 }
 
 .title-styles {

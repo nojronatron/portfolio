@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import $ from 'jquery';
 import './App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './components/About';
-import Home from './components/Home';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import About from './components/About.jsx';
+import Home from './components/Home.jsx';
 
 class App extends Component {
   constructor(props) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.scss';
-import App from './App';
+import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,11 +11,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 window.$primaryLanguage = 'en';
 window.$primaryLanguageIconId = 'primary-lang-icon';
 
-const container = document.getElementById('root');
-const root = createRoot(container);
-root.render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-  </StrictMode>
-);
+  </StrictMode>,
+)
 serviceWorker.register();
