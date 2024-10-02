@@ -11,15 +11,16 @@ import vscodeIcon from '@iconify/icons-logos/visual-studio-code';
 import PropTypes from 'prop-types';
 
 class About extends Component {
-    static propTypes = {
-        sharedBasicInfo: PropTypes.object,
-        resumeBasicInfo: PropTypes.object,
-    }
+  static propTypes = {
+    sharedBasicInfo: PropTypes.object,
+    resumeBasicInfo: PropTypes.object,
+  };
 
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = 'images/' + this.props.sharedBasicInfo.image;
     }
+
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
       var hello = this.props.resumeBasicInfo.description_header;

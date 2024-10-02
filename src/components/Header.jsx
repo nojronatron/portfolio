@@ -4,28 +4,28 @@ import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
 import PropTypes from 'prop-types';
 
-export default function Header( { sharedData }) {
+export default function Header({ sharedData }) {
   const [checked, setChecked] = useState(false);
-  
+
   let titles = [];
 
   const onThemeSwitchChange = () => {
     if (checked == true) {
-      setChecked(false)
+      setChecked(false);
     } else {
       setChecked(true);
     }
 
     setTheme();
-  }
+  };
 
   const setTheme = () => {
     var dataThemeAttribute = 'data-theme';
     var body = document.body;
     var newTheme =
       body.getAttribute(dataThemeAttribute) === 'dark' ? 'light' : 'dark';
-      body.setAttribute(dataThemeAttribute, newTheme);
-  }
+    body.setAttribute(dataThemeAttribute, newTheme);
+  };
 
   var name = '';
   if (sharedData) {
@@ -33,16 +33,12 @@ export default function Header( { sharedData }) {
     titles = sharedData.titles.map((x) => [x.toUpperCase()]);
   }
 
-  const HeaderTitleTypeAnimation = memo(
-    () => {
-      return titles;
-    });
+  const HeaderTitleTypeAnimation = memo(() => {
+    return titles;
+  });
 
   return (
-    <header
-      id='home'
-      style={{ height: '35vh', display: 'block' }}
-    >
+    <header id='home' style={{ height: '35vh', display: 'block' }}>
       <a
         href='https://github.com/nojronatron/portfolio'
         target='_blank'

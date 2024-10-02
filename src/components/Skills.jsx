@@ -16,31 +16,32 @@ class Skills extends Component {
     }
 
     if (this.props.sharedSkills !== undefined) {
-      var codingIcons = this.props.sharedSkills.codingLanguages.map(
-        function (codeLang, idx) {
-          return (
-            <li
-              className='mx-3'
-              key={idx}
-              style={{
-                display: 'inline-block',
-              }}
-            >
-              <div className='text-center skills-tile'>
-                <Icon
-                  icon={codeLang.icon}
-                  style={{
-                    display: 'block',
-                    fontSize: '2em',
-                    margin: '0 auto',
-                  }}
-                />
-                <p style={{ fontSize: '1em' }}>{codeLang.name}</p>
-              </div>
-            </li>
-          );
-        }
-      );
+      var codingIcons = this.props.sharedSkills.codingLanguages.map(function (
+        codeLang,
+        idx
+      ) {
+        return (
+          <li
+            className='mx-3'
+            key={idx}
+            style={{
+              display: 'inline-block',
+            }}
+          >
+            <div className='text-center skills-tile'>
+              <Icon
+                icon={codeLang.icon}
+                style={{
+                  display: 'block',
+                  fontSize: '2em',
+                  margin: '0 auto',
+                }}
+              />
+              <p style={{ fontSize: '1em' }}>{codeLang.name}</p>
+            </div>
+          </li>
+        );
+      });
     }
 
     if (this.props.sharedSkills !== undefined) {

@@ -1,4 +1,4 @@
-import  { Component } from 'react';
+import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import $ from 'jquery';
 import './App.scss';
@@ -23,7 +23,7 @@ class App extends Component {
 
   componentDidMount = () => {
     this.loadSharedData();
-    this.applyPickedLanguage(window.$primaryLanguage    );
+    this.applyPickedLanguage(window.$primaryLanguage);
     var resumePath = `resume_enus.json`;
     this.loadResumeFromPath(resumePath);
   };
@@ -59,24 +59,29 @@ class App extends Component {
 
   render() {
     return (
-        <Router>
-          <Header sharedData={this.state.sharedData.basic_info} />
-          <Routes>
-            <Route exact path='/' element={
+      <Router>
+        <Header sharedData={this.state.sharedData.basic_info} />
+        <Routes>
+          <Route
+            exact
+            path='/'
+            element={
               <Home
-              resumeData={this.state.resumeData}
-              sharedData={this.state.sharedData}
+                resumeData={this.state.resumeData}
+                sharedData={this.state.sharedData}
               />
-            }>
-            </Route>
-            <Route  path='/about' element={
+            }
+          ></Route>
+          <Route
+            path='/about'
+            element={
               <About
-              resumeBasicInfo={this.state.resumeData.basic_info}
-              sharedBasicInfo={this.state.sharedData.basic_info}
-              />            
-            }>
-            </Route>
-          </Routes>
+                resumeBasicInfo={this.state.resumeData.basic_info}
+                sharedBasicInfo={this.state.sharedData.basic_info}
+              />
+            }
+          ></Route>
+        </Routes>
         <Footer
           sharedBasicInfo={this.state.sharedData.basic_info}
           applyPickedLanguage={this.applyPickedLanguage}

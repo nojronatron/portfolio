@@ -42,7 +42,7 @@ class ProjectDetailsModal extends Component {
         }
       }
     }
-    
+
     return (
       <Modal
         {...this.props}
