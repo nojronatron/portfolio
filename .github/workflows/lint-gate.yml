@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  prettier:
+  eslint:
     runs-on: ubuntu-latest
 
     steps:
