@@ -41,7 +41,7 @@ export default function Header( { sharedData }) {
   return (
     <header
       id='home'
-      style={{ height: window.innerHeight - 100, display: 'block' }}
+      style={{ height: '35vh', display: 'block' }}
     >
       <a
         href='https://github.com/nojronatron/portfolio'
@@ -138,7 +138,7 @@ export default function Header( { sharedData }) {
           />
         </Nav.Item>
       </Nav>
-      <div className='row aligner' style={{ height: '100%' }}>
+      <div className='row aligner' style={{ height: '40vh' }}>
         <div className='col-md-12'>
           <div>
             <img
