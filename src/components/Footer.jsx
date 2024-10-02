@@ -1,6 +1,12 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Footer extends Component {
+  static propTypes = {
+    sharedBasicInfo: PropTypes.object,
+    applyPickedLanguage: PropTypes.func,
+  };
+
   render() {
     if (this.props.sharedBasicInfo) {
       var networks = this.props.sharedBasicInfo.social.map(function (network) {

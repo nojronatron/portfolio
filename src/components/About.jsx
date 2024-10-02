@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Icon } from '@iconify/react';
 import nodejsIcon from '@iconify/icons-logos/nodejs';
 import reactIcon from '@iconify/icons-logos/react';
@@ -8,7 +8,14 @@ import html5Icon from '@iconify/icons-logos/html-5';
 import css3Icon from '@iconify/icons-logos/css-3';
 import intellijIcon from '@iconify/icons-logos/intellij-idea';
 import vscodeIcon from '@iconify/icons-logos/visual-studio-code';
+import PropTypes from 'prop-types';
+
 class About extends Component {
+    static propTypes = {
+        sharedBasicInfo: PropTypes.object,
+        resumeBasicInfo: PropTypes.object,
+    }
+
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = 'images/' + this.props.sharedBasicInfo.image;

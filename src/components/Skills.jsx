@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Icon } from '@iconify/react';
+import PropTypes from 'prop-types';
 
 class Skills extends Component {
+  static propTypes = {
+    sharedSkills: PropTypes.object,
+    resumeBasicInfo: PropTypes.object,
+  };
+
   render() {
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
       var codeSkillsSection =

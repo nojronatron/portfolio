@@ -1,23 +1,31 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Projects from './Projects.jsx';
 import Skills from './Skills.jsx';
 import Experience from './Experience.jsx';
+import PropTypes from 'prop-types';
 
 class Home extends Component {
+  static propTypes = {
+    resumeData: PropTypes.object,
+    sharedData: PropTypes.object,
+  };
+
   render() {
+    const resumeInfo = this.props.resumeData;
+
     return (
       <div>
         <Projects
-          resumeProjects={this.props.resumeData.projects}
-          resumeBasicInfo={this.props.resumeData.basic_info}
+          resumeProjects={resumeInfo.projects}
+          resumeBasicInfo={resumeInfo.basic_info}
         />
         <Skills
           sharedSkills={this.props.sharedData.skills}
-          resumeBasicInfo={this.props.resumeData.basic_info}
+          resumeBasicInfo={resumeInfo.basic_info}
         />
         <Experience
-          resumeExperience={this.props.resumeData.experience}
-          resumeBasicInfo={this.props.resumeData.basic_info}
+          resumeExperience={resumeInfo.experience}
+          resumeBasicInfo={resumeInfo.basic_info}
         />
       </div>
     );

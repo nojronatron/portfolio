@@ -1,12 +1,18 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import Badge from 'react-bootstrap/Badge';
+import PropTypes from 'prop-types';
 
 class Experience extends Component {
+  static propTypes = {
+    resumeExperience: PropTypes.array,
+    resumeBasicInfo: PropTypes.object,
+  };
+
   render() {
     if (this.props.resumeExperience && this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.experience;
