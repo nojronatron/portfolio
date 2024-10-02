@@ -1,11 +1,17 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Modal } from 'react-bootstrap';
 import AwesomeSlider from 'react-awesome-slider';
-import AwesomeSliderStyles from '../scss/light-slider.scss';
-import AwesomeSliderStyles2 from '../scss/dark-slider.scss';
+import * as LightSliderStyle from '../scss/light-slider.scss';
+import * as DarkSliderStyle from '../scss/dark-slider.scss';
+import PropTypes from 'prop-types';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 
 class ProjectDetailsModal extends Component {
+  static propTypes = {
+    data: PropTypes.object,
+    onHide: PropTypes.bool,
+  };
+
   render() {
     if (this.props.data) {
       const technologies = this.props.data.technologies;
@@ -36,6 +42,7 @@ class ProjectDetailsModal extends Component {
         }
       }
     }
+
     return (
       <Modal
         {...this.props}
@@ -70,7 +77,7 @@ class ProjectDetailsModal extends Component {
               ></span>
             </div>
             <AwesomeSlider
-              cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
+              cssModule={[LightSliderStyle, DarkSliderStyle]}
               // animation='scaleOutAnimation'
               className='slider-image'
             >

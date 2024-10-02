@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import $ from 'jquery';
 import './App.scss';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './components/About';
-import Home from './components/Home';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import About from './components/About.jsx';
+import Home from './components/Home.jsx';
 
 class App extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       foo: 'bar',
@@ -17,29 +17,15 @@ class App extends Component {
     };
   }
 
-  applyPickedLanguage = (pickedLanguage, oppositeLangIconId) => {
-    this.swapCurrentlyActiveLanguage(oppositeLangIconId);
+  applyPickedLanguage = (pickedLanguage) => {
     document.documentElement.lang = pickedLanguage;
-    var resumePath =
-      document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
-        : `res_secondaryLanguage.json`;
-    this.loadResumeFromPath(resumePath);
-  };
-
-  swapCurrentlyActiveLanguage = (oppositeLangIconId) => {
-    var pickedLangIconId = window.$primaryLanguageIconId;
-    document
-      .getElementById(pickedLangIconId)
-      .removeAttribute('filter', 'brightness(80%)');
   };
 
   componentDidMount = () => {
     this.loadSharedData();
-    this.applyPickedLanguage(
-      window.$primaryLanguage
-      // window.$secondaryLanguageIconId
-    );
+    this.applyPickedLanguage(window.$primaryLanguage);
+    var resumePath = `resume_enus.json`;
+    this.loadResumeFromPath(resumePath);
   };
 
   loadResumeFromPath = (path) => {

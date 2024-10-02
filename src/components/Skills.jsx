@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Icon } from '@iconify/react';
+import PropTypes from 'prop-types';
 
 class Skills extends Component {
+  static propTypes = {
+    sharedSkills: PropTypes.object,
+    resumeBasicInfo: PropTypes.object,
+  };
+
   render() {
     if (this.props.sharedSkills && this.props.resumeBasicInfo) {
       var codeSkillsSection =
@@ -10,31 +16,32 @@ class Skills extends Component {
     }
 
     if (this.props.sharedSkills !== undefined) {
-      var codingIcons = this.props.sharedSkills.codingLanguages.map(
-        function (codeLang, idx) {
-          return (
-            <li
-              className='mx-3'
-              key={idx}
-              style={{
-                display: 'inline-block',
-              }}
-            >
-              <div className='text-center skills-tile'>
-                <Icon
-                  icon={codeLang.icon}
-                  style={{
-                    display: 'block',
-                    fontSize: '2em',
-                    margin: '0 auto',
-                  }}
-                />
-                <p style={{ fontSize: '1em' }}>{codeLang.name}</p>
-              </div>
-            </li>
-          );
-        }
-      );
+      var codingIcons = this.props.sharedSkills.codingLanguages.map(function (
+        codeLang,
+        idx
+      ) {
+        return (
+          <li
+            className='mx-3'
+            key={idx}
+            style={{
+              display: 'inline-block',
+            }}
+          >
+            <div className='text-center skills-tile'>
+              <Icon
+                icon={codeLang.icon}
+                style={{
+                  display: 'block',
+                  fontSize: '2em',
+                  margin: '0 auto',
+                }}
+              />
+              <p style={{ fontSize: '1em' }}>{codeLang.name}</p>
+            </div>
+          </li>
+        );
+      });
     }
 
     if (this.props.sharedSkills !== undefined) {

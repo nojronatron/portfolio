@@ -1,6 +1,12 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Footer extends Component {
+  static propTypes = {
+    sharedBasicInfo: PropTypes.object,
+    applyPickedLanguage: PropTypes.func,
+  };
+
   render() {
     if (this.props.sharedBasicInfo) {
       var networks = this.props.sharedBasicInfo.social.map(function (network) {
@@ -40,7 +46,7 @@ class Footer extends Component {
             <div className='col'>
               <div className='copyright py-3 text-center'>
                 <div className='container'>
-                  Revision {' July 2023 - '}
+                  Revision {' 2 October 2024 - '}
                   {this.props.sharedBasicInfo
                     ? this.props.sharedBasicInfo.name
                     : '???'}

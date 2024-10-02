@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import ProjectDetailsModal from './ProjectDetailsModal';
+import { Component } from 'react';
+import ProjectDetailsModal from './ProjectDetailsModal.jsx';
+import PropTypes from 'prop-types';
 
 class Projects extends Component {
   constructor(props) {
@@ -9,6 +10,11 @@ class Projects extends Component {
       detailsModalShow: false,
     };
   }
+
+  static propTypes = {
+    resumeProjects: PropTypes.array,
+    resumeBasicInfo: PropTypes.object,
+  };
 
   render() {
     let detailsModalShow = (data) => {

@@ -1,6 +1,6 @@
-body[data-theme='dark'] {
-  @import '/src/scss/dark-slider.scss';
+@use '/src/scss/dark-slider';
 
+body[data-theme='dark'] {
   .slider-tab {
     background-color: #8c8c8c;
   }
