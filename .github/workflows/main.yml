@@ -21,3 +21,7 @@ jobs:
         with:
           dry: true
           prettier_options: --check **/*.{js,scss,css,json} --single-quote --jsx-single-quote
+
+      - name: Linting
+        run: |
+          npm run lint
