@@ -13,11 +13,17 @@ This site began as a lab assignment while attending Code Fellows in Seattle, WA.
 
 ## Current Version ##
 
-v0.3.0 - October 2024
+[Unreleased] - TBD
+
+- Add recent projects.
+- Refactor styling to improve accessibility.
+- Refactor layout and style for a more responsive design.
+
+[v0.3.0] - 2-October-2024
 
 - Fixed many dependency issues.
 - Moved to [Vite](https://vitejs.dev/) tooling system.
-- More updates TBD.
+- Updated Netlify deploy for automated publication with Vite tooling.
 
 Check out the live site on [Netlify](https://portfolio-jon-rumsey.netlify.app).
 
