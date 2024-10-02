@@ -15,7 +15,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
+      
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+            node-version: '20'
 
-      - name: Linting
+      - name: Install ESLint
+        run: |
+          npm install eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh
+
+      - name: Run ESLint
         run: |
           npm run lint
