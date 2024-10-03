@@ -22,13 +22,40 @@
   },
   "projects": [
     {
-      "title": "Markdown Table of Contents",
-      "startDate": "2023",
-      "description": "Some markdown files can get rather large with lots of headings, and finding information within can get difficult. With a table of contents it is easier to find the information you are looking for. With this extension, you can generate a table of contents for your markdown file, and keep it up to date as you add, remove, or change headings.",
+      "title": "BF-BMX",
+      "startDate": "2024",
+      "description": "Many of my volunteer adventures include tracking cyclists or runners on a course. For one event, Bigfoot 200, hams use \"email over ham radio\" to send in runner reports. I developed a multi-project solution using DotNET 8 and WPF that watches for these reports, parses and logs the location data, and then posts the data to an ASP.NET Minimal API Server with an Entity Framework Core DB. The ham responsible for maintaining runner locations, can run reports against the logged data and answer questions like which runners has passed through a specific Aid Station. While specific to Bigfoot 200, the project is designed to be adaptable to other events. This project was designed to work in conjunction with the Bigfoot Bib Report Form project, and had its first trial-run in August 2024.",
       "images": [
+        "images/portfolio/BF-BMX/bfbmx-desktop-overview-655x385.png",
+        "images/portfolio/BF-BMX/bfbmx-system-topology-april-2024.png"
+      ],
+      "url": "https://github.com/nojronatron/BF-BMX",
+      "technologies": [
+        {
+          "class": "devicon-visualstudio-plain colored",
+          "name": "Visual Studio"
+        },
+        {
+          "class": "devicon-dot-net-plain-wordmark colored",
+          "name": "DotNET 6"
+        },
+        {
+          "class": "devicon-dot-net-plain-wordmark colored",
+          "name": "ASP.NET Core"
+        }
+      ]
+    },
+    {
+      "title": "Create Markdown TOC",
+      "startDate": "2023",
+      "description": "Some markdown files can get rather large with lots of headings, making it difficult to find information within. Using a table of contents speeds locating sections of interest, making it easier to find what you are looking for. With this extension, you can generate a table of contents in your markdown file without having to manually find and type out each heading. ",
+      "images": [
+        "images/portfolio/CreateTOC/markdown-toc-nextline-file.png",
+        "images/portfolio/CreateTOC/markdown-toc-nextline-table-of-contents.png",
+        "images/portfolio/CreateTOC/markdown-toc-vscode-extension-marketplace.png",
         "images/portfolio/CreateTOC/markdown-toc-create-toc-video.gif",
-        "images/portfolio/CreateTOC/markdown-toc-md-file-with-headings.png",
-        "images/portfolio/CreateTOC/markdown-toc-md-file-updated-with-toc.png"
+        "images/portfolio/CreateTOC/markdown-toc-closed-atx-with-headings.png",
+        "images/portfolio/CreateTOC/markdown-toc-closed-atx-updated-with-toc.png"
       ],
       "url": "https://github.com/nojronatron/markdown-toc",
       "technologies": [
@@ -69,8 +96,8 @@
     },
     {
       "title": "Bigfoot Bib Report Form",
-      "startDate": "2021, 2022, 2023",
-      "description": "Destination Trail holds a Bigfoot 200 ultramarathon yearly in SW Washington State. Hams from all around Washington and Oregon volunteer to provide communications in the Gifford-Pinchot Nat'l Forest, providing runner locations, tactical, and emergency communications. The original form code was developed by the Winlink Development Team (www.winlink.org) and edited to assist Aid Station HAMs in tracking runners and sending bib status and location information to the Net Control Station. Use of accessible colors and fonts, and a responsive UI make this form easy to use. Tabbing is organized and highlights are used to ID currently selected field. Subject line is automatically updated with common data. The form allows adding a short status message, and all data can be stored to a text file using Browser API to backup or to sneaker net data to a Winlink station for transmission.",
+      "startDate": "2021",
+      "description": "Destination Trail holds an annual ultramarathon event in the Gifford-Pinchot Nat'l Forest in SW Washington State called Bigfoot 200. Hams from all around Washington and Oregon volunteer to provide communications for this event including, information on runner locations, as well as logistical and emergency communications with Net Control near the event base. The Winlink Development Team (www.winlink.org) developed a form to capture participant data at checkpoints or Aid Stations for events like this. I cleaned-up and customized the form using HTML 5, CSS 3, and JavaScript to meet the needs of Aid Station HAMs while tracking runners for this event. Design improvements include: Use of accessible colors and fonts, selected control highlighting, keyboard navigation, and a responsive UI for desktop, mobile, and tablet devices. Features include: Automated subject line generation, comma-separated data display, and data backup and restore, allowing standalone form usage so a HAM can fill out the form, save the data, and then sneaker net it to a Winlink station for transmission. Every year the form is updated with new features and improvements using input from the HAMs who use it.",
       "images": [
         "images/portfolio/BfBibReportForm/initial-page-load-600px.jpg",
         "images/portfolio/BfBibReportForm/6-change-aid-station-changes-subject-600px.jpg",
@@ -98,7 +125,7 @@
     {
       "title": "EZ-PC Shopper",
       "startDate": "2022",
-      "description": "Final project for CodeFellows Code 201 class, helps site visitors build and buy a computer system from the ground up. This project challenged me to refine my bug finding and squashing abilities, acquire a deeper understanding of CSS 3.0, and experience project management by guiding meetings, project design, and pair-programming with my team mates.",
+      "description": "Final project for CodeFellows Code 201 class, designed to help web site users build and buy a computer system regardless of their knowledge of computers. This project challenged me to refine my bug finding and squashing skills, acquire a deeper understanding of CSS 3.0, and experience project management by guiding meetings, assisting with UI and functional design, and exercise pair-programming with my team mates.",
       "images": [
         "images/portfolio/EZPCShopper/ez-pc-shopper-homepage.jpg",
         "images/portfolio/EZPCShopper/ez-pc-custom-hamburger-flyout-menu.jpg",
@@ -191,17 +218,46 @@
   ],
   "experience": [
     {
+      "company": "Community Volunteering",
+      "title": "National Multiple Sclerosis Society Bike Ride Support",
+      "years": "2013 - 2024",
+      "mainTech": ["Logistics, Communications, and Safety Support."],
+      "technologies": [
+        "HAM Communications",
+        "Planning and Logistics",
+        "Technical Support",
+        "Minor First Aid",
+        "Minor Bike Repair",
+        "Clean Driving Record"
+      ]
+    },
+    {
+      "company": "Destination Trail",
+      "title": "HAM Radio Team",
+      "years": "2016 - 2024",
+      "mainTech": ["Logistics, Software Development, Communications, and Safety Support."],
+      "technologies": [
+        "Effective HAM Communications",
+        "Planning and Logistics",
+        "Technical Support",
+        "Winlink SME",
+        "Minor First Aid",
+        "BF-BMX Project",
+        "Bigfoot Bib Report Form"
+      ]
+    },
+    {
       "company": "Citrix Systems, Inc",
       "title": "Software Test Engineer II",
       "years": "April 2014 - July 2017",
-      "mainTech": ["Plan, Run, Report Tests, Bugs. Sys-Admining."],
+      "mainTech": ["Plan, Run, Report Tests, Bugs. Sys-Admin."],
       "technologies": [
-        "Visual Studio 2012, 2016",
+        "Visual Studio",
         "PyCharm",
         "Azure WebApps and VMs",
         "Selenium",
         ".NET Framework",
-        "Python 3.x",
+        "Python 3",
         "Jira",
         "BitBucket and Git"
       ]
@@ -212,7 +268,7 @@
       "years": "2006 - 2014",
       "mainTech": ["Manage dev-test lab, networks, Active Directory."],
       "technologies": [
-        "Windows Server 2008, 2012 R2",
+        "Windows Server",
         "PowerShell",
         "Active Directory",
         "DHCP, DNS, and WINS Infrastructure",
@@ -226,8 +282,8 @@
       "years": "2004 - 2006",
       "mainTech": ["Build-fix computers, maintain lab and network."],
       "technologies": [
-        "Windows Server 2000, 2008",
-        "Windows Vista, 7",
+        "Windows Server",
+        "Windows Desktop",
         "Manage TCP/IP, DHCP, DNS, WINS",
         "Deploy Software and Hardware",
         "Build, Support, Service PCs, Servers",
@@ -242,8 +298,8 @@
       "technologies": [
         "Technical Support",
         "Helpdesk Application",
-        "Windows Server 2000",
-        "Windows XP",
+        "Windows Server",
+        "Windows Desktop",
         "Active Directory",
         "Server Room Hardware Management",
         "Disaster Recovery"
