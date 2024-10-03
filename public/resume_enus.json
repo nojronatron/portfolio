@@ -40,7 +40,7 @@
           "name": "DotNET 6"
         },
         {
-          "class": "devicon-dot-net-plain-wordmark colored",
+          "class": "devicon-dotnetcore-plain colored",
           "name": "ASP.NET Core"
         }
       ]
@@ -185,7 +185,7 @@
           "name": "C#"
         },
         {
-          "class": "devicon-dot-net-plain-wordmark colored",
+          "class": "devicon-dotnetcore-plain colored",
           "name": "Blazor"
         }
       ]
@@ -218,24 +218,10 @@
   ],
   "experience": [
     {
-      "company": "Community Volunteering",
-      "title": "National Multiple Sclerosis Society Bike Ride Support",
-      "years": "2013 - 2024",
-      "mainTech": ["Logistics, Communications, and Safety Support."],
-      "technologies": [
-        "HAM Communications",
-        "Planning and Logistics",
-        "Technical Support",
-        "Minor First Aid",
-        "Minor Bike Repair",
-        "Clean Driving Record"
-      ]
-    },
-    {
       "company": "Destination Trail",
-      "title": "HAM Radio Team",
+      "title": "HAM Radio Team Lead Volunteer",
       "years": "2016 - 2024",
-      "mainTech": ["Logistics, Software Development, Communications, and Safety Support."],
+      "mainTech": ["Leadership, Software, Communications, Support."],
       "technologies": [
         "Effective HAM Communications",
         "Planning and Logistics",
@@ -244,6 +230,34 @@
         "Minor First Aid",
         "BF-BMX Project",
         "Bigfoot Bib Report Form"
+      ]
+    },
+    {
+      "company": "National Multiple Sclerosis Society",
+      "title": "Volunteer Supplies and Gear Driver",
+      "years": "2013 - 2024",
+      "mainTech": ["Communications, Infrastructure Setup, Safety, Support."],
+      "technologies": [
+        "HAM Communications and SME",
+        "Network and Comms Infrastructure",
+        "Technical Support",
+        "Minor First Aid",
+        "Minor Bike Repair",
+        "Clean Driving Record",
+        "Event Planning"
+      ]
+    },
+    {
+      "company": "Various Organizations",
+      "title": "HAM Radio Communications and Logistics Volunteer",
+      "years": "2013 - 2024",
+      "mainTech": ["Logistics, Communications, Safety, and Support."],
+      "technologies": [
+        "HAM Communications",
+        "Planning and Logistics",
+        "Technical Support",
+        "Minor First Aid",
+        "Effective Station Setup, Operation"
       ]
     },
     {
