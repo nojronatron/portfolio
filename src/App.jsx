@@ -11,19 +11,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      foo: 'bar',
       resumeData: {},
       sharedData: {},
     };
   }
 
-  applyPickedLanguage = (pickedLanguage) => {
-    document.documentElement.lang = pickedLanguage;
-  };
-
   componentDidMount = () => {
     this.loadSharedData();
-    this.applyPickedLanguage(window.$primaryLanguage);
     var resumePath = `resume_enus.json`;
     this.loadResumeFromPath(resumePath);
   };
@@ -82,10 +76,7 @@ class App extends Component {
             }
           ></Route>
         </Routes>
-        <Footer
-          sharedBasicInfo={this.state.sharedData.basic_info}
-          applyPickedLanguage={this.applyPickedLanguage}
-        />
+        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </Router>
     );
   }
