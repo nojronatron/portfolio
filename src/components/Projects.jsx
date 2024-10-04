@@ -55,6 +55,8 @@ class Projects extends Component {
           </div>
         );
       });
+    } else {
+      console.log('Projects section and/or Resume Basic Info missing!');
     }
 
     return (
@@ -67,9 +69,9 @@ class Projects extends Component {
             <div className='row mx-auto'>{projects}</div>
           </div>
           <ProjectDetailsModal
-            show={this.state.detailsModalShow}
-            onHide={detailsModalClose}
-            data={this.state.deps}
+            propsShow={this.state.detailsModalShow}
+            propsOnHide={detailsModalClose}
+            propsData={this.state.deps}
           />
         </div>
       </section>
