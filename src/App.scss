@@ -25,7 +25,7 @@ html {
 .header-image {
   width: 350px;
   border-radius: 50%;
-  border: 5px solid #d7caaa;
+  border: 5px solid #4e4a3e;
 }
 
 header {
@@ -135,7 +135,7 @@ header h1 {
 }
 
 #about h1 {
-  padding-top: 5%;
+  padding-top: 1em;
   font:
     18px/24px 'opensans-bold',
     sans-serif;
@@ -148,6 +148,10 @@ header h1 {
 .foto img {
   display: block;
   width: 100%;
+}
+
+.profile-pic {
+  box-shadow: 8px 10px 5px 0px #6d634b;
 }
 
 .foto div {
@@ -436,14 +440,12 @@ header h1 {
 }
 
 footer {
-  background: #1f1f1f;
-  min-height: 100px;
-  width: 100%;
-  overflow: hidden;
-  font-size: 14px;
-  color: white;
-  position: relative;
-  text-align: center;
+  background-color: #6d634b;
+  min-height: 80px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 footer a,
@@ -457,9 +459,14 @@ footer a:focus {
 }
 
 .social-links {
-  font-size: 3rem;
+  display: 'block';
+  font-size: '2em';
+  margin: '0 auto';
 }
 
-.copyright {
-  font-size: 1.2rem;
+.jr-software-logo {
+  margin: 15px;
+  width: 5em;
+  border-radius: 50%;
+  border: 5px solid #4e4a3e;
 }
