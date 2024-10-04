@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Icon } from '@iconify/react';
 
 export default function Footer({ sharedBasicInfo }) {
   const revision = '3 October 2024';
@@ -6,28 +7,33 @@ export default function Footer({ sharedBasicInfo }) {
   if (sharedBasicInfo) {
     var networks = sharedBasicInfo.social.map(function (network) {
       return (
-        <span key={network.name} className='m-4'>
+        <div key={network.name} className='m-4'>
           <a href={network.url} target='_blank' rel='noopener noreferrer'>
-            <i className={network.class}></i>
+            <Icon icon={network.class} width='4em' height='4em'></Icon>
           </a>
-        </span>
+        </div>
       );
     });
 
     return (
-      <footer>
-        <div className='d-flex flex-row justify-content-around'>
-          <div>{networks}</div>
-          <img
-            src='images/jrsoftware-logo-128x128.png'
-            alt='JR Software'
-            height='20em'
-          />
+      <footer
+        id='foot'
+        className='d-flex justify-content-between p-2 align-items-center'
+      >
+        <div className='d-flex justify-content-evenly align-items-center'>
+          {networks}
           <div>
-            Revision {revision}
-            {', '}
-            {sharedBasicInfo ? sharedBasicInfo.name : '???'}
+            <img
+              className='jr-software-logo'
+              src='images/jrsoftware-logo-128x128.png'
+              alt='JR Software'
+            />
           </div>
+        </div>
+        <div className='revision-text'>
+          Revision {revision}
+          {', '}
+          {sharedBasicInfo ? sharedBasicInfo.name : '???'}
         </div>
       </footer>
     );
