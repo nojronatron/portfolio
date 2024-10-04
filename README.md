@@ -40,3 +40,7 @@ The starter code for this project was cloned from project [Dorota1997/react-fron
 ## Contributors ##
 
 Content Creator, UX and Accessibility Design, JS/React Developer, Test Engineer, and DevOps Engineer: Jon Rumsey [nojronatron](https://github.com/nojronatron).
+
+Dev Icons are courtesy of [Devicon.dev](https://devicon.dev)
+
+This site uses [Iconify-React](https://iconify.design/) for some language and tools icons.
