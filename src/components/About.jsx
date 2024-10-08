@@ -10,25 +10,17 @@ import intellijIcon from '@iconify/icons-logos/intellij-idea';
 import vscodeIcon from '@iconify/icons-logos/visual-studio-code';
 import PropTypes from 'prop-types';
 
-class About extends Component {
-  static propTypes = {
-    sharedBasicInfo: PropTypes.object,
-    resumeBasicInfo: PropTypes.object,
-  };
+export default function About({ resumeBasicInfo, sharedBasicInfo }) {
+  if (sharedBasicInfo) {
+    var profilepic = 'images/' + sharedBasicInfo.image;
+  }
 
-  render() {
-    if (this.props.sharedBasicInfo) {
-      var profilepic = 'images/' + this.props.sharedBasicInfo.image;
-    }
-
-    if (this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.about;
-      var hello = this.props.resumeBasicInfo.description_header;
-      // var about = this.props.resumeBasicInfo.description;
-      var about = this.props.resumeBasicInfo.description.map((element, idx) => {
-        return <div key={idx}>{element}</div>;
-      });
-    }
+  if (resumeBasicInfo) {
+    var sectionName = resumeBasicInfo.section_name.about;
+    var hello = resumeBasicInfo.description_header;
+    var about = resumeBasicInfo.description.map((element, idx) => {
+      return <div key={idx}>{element}</div>;
+    });
 
     return (
       <section id='about'>
@@ -130,4 +122,7 @@ class About extends Component {
   }
 }
 
-export default About;
+About.propTypes = {
+  sharedBasicInfo: PropTypes.object,
+  resumeBasicInfo: PropTypes.object,
+};
