@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 
-function ProjectDetailsModal({ propsShow, propsOnHide, propsData }) {
+export default function ProjectDetailsModal({
+  propsShow,
+  propsOnHide,
+  propsData,
+}) {
   if (propsData) {
     const technologies = propsData.technologies;
     const images = propsData.images;
@@ -103,5 +107,3 @@ ProjectDetailsModal.propTypes = {
   propsOnHide: PropTypes.func,
   propsData: PropTypes.object,
 };
-
-export default ProjectDetailsModal;
