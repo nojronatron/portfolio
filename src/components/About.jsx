@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import { Icon } from '@iconify/react';
 import nodejsIcon from '@iconify/icons-logos/nodejs';
 import reactIcon from '@iconify/icons-logos/react';
