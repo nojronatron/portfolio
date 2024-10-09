@@ -15,6 +15,7 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
     ? resumeBasicInfo.section_name.projects
     : ['section name missing'];
 
+  // resumeProjects or resumeBasicInfo are empty on first render so no 'else' condition is needed
   if (
     Array.isArray(resumeProjects) &&
     resumeProjects.length > 0 &&
@@ -49,8 +50,6 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
         </div>
       );
     });
-  } else {
-    console.log('Projects section and/or Resume Basic Info missing!');
   }
 
   return (
