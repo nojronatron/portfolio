@@ -35,7 +35,7 @@ body[data-theme='dark'] {
       color: white;
     }
   }
-
+  
   #about {
     background-color: #7f7f7f;
     h1 span {
@@ -48,6 +48,18 @@ body[data-theme='dark'] {
       background: #6d6d6d;
       color: white;
     }
+
+    .card-header {
+      background: #464646;
+      h1 {
+      color: white;
+    }
+  }
+      
+    .profile-pic {
+      box-shadow: 8px 10px 5px 0px #a59753;
+    }
+
   }
 
   .themed-boxshadow {
@@ -97,6 +109,16 @@ body[data-theme='dark'] {
     }
   }
 
+  #foot {
+    background-color: #494949;
+  }
+
+  .revision-text {
+    color: white;
+    font-size: 2em;
+    padding-right: 4px;
+  }
+
   .modal-inside .modal-content {
     background: #5b5b5b;
     color: white;
@@ -104,5 +126,12 @@ body[data-theme='dark'] {
 
   .close-icon {
     color: white;
+  }
+
+  
+  .header-image {
+    width: 350px;
+    border-radius: 50%;
+    border: 5px solid #eee2bd;
   }
 }

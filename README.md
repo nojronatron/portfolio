@@ -18,6 +18,7 @@ This site began as a lab assignment while attending Code Fellows in Seattle, WA.
 - Add recent projects.
 - Refactor styling to improve accessibility.
 - Refactor layout and style for a more responsive design.
+- Convert class-based components to functional componets.
 
 [v0.3.0] - 2-October-2024
 
@@ -40,3 +41,7 @@ The starter code for this project was cloned from project [Dorota1997/react-fron
 ## Contributors ##
 
 Content Creator, UX and Accessibility Design, JS/React Developer, Test Engineer, and DevOps Engineer: Jon Rumsey [nojronatron](https://github.com/nojronatron).
+
+Dev Icons are courtesy of [Devicon.dev](https://devicon.dev)
+
+This site uses [Iconify-React](https://iconify.design/) for some language and tools icons.

@@ -12,12 +12,12 @@
       {
         "name": "github",
         "url": "https://github.com/nojronatron",
-        "class": "fab fa-github"
+        "class": "devicon:github-wordmark"
       },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/jonathan-rumsey-wa",
-        "class": "fab fa-linkedin"
+        "class": "devicon:linkedin"
       }
     ],
     "image": "jon-rainier-400x400.jpg"
@@ -41,7 +41,7 @@
         "icon": "devicon-java"
       },
       {
-        "name": "C#",
+        "name": "C Sharp",
         "icon": "vscode-icons:file-type-csharp"
       }
     ],
