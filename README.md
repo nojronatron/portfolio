@@ -18,7 +18,7 @@ This site began as a lab assignment while attending Code Fellows in Seattle, WA.
 - Add recent projects.
 - Refactor styling to improve accessibility.
 - Refactor layout and style for a more responsive design.
-- Convert class-based components to functional componets.
+- Convert class-based components to functional componets and implements React Hooks instead.
 
 [v0.3.0] - 2-October-2024
 
