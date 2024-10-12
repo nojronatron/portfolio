@@ -18,15 +18,10 @@ export default function ProjectDetailsModal({
       var tech = technologies.map((icons, i) => {
         return (
           <li className='list-inline-item mx-3' key={i}>
-            <span>
-              <div className='text-center'>
-                <i className={icons.class} style={{ fontSize: '300%' }}>
-                  <p className='text-center' style={{ fontSize: '30%' }}>
-                    {icons.name}
-                  </p>
-                </i>
-              </div>
-            </span>
+            <div className={icons.class} style={{ fontSize: '3.5em' }}></div>
+            <p className='text-center' style={{ fontSize: '1.8em' }}>
+              {icons.name}
+            </p>
           </li>
         );
       });
@@ -49,26 +44,25 @@ export default function ProjectDetailsModal({
       className='modal-inside'
     >
       <span onClick={propsOnHide} className='modal-close'>
-        <i className='fas fa-times fa-3x close-icon'></i>
+        <div className='fas fa-times fa-3x close-icon'></div>
       </span>
       <div className='col-md-12'>
         <div className='col-md-10 mx-auto' style={{ paddingBottom: '50px' }}>
           <div className='slider-tab'>
             <span
-              className='iconify slider-iconfiy'
+              className='iconify slider-iconify'
               data-icon='emojione:red-circle'
               data-inline='false'
-              style={{ marginLeft: '5px' }}
             ></span>{' '}
             &nbsp;{' '}
             <span
-              className='iconify slider-iconfiy'
+              className='iconify slider-iconify'
               data-icon='twemoji:yellow-circle'
               data-inline='false'
             ></span>{' '}
             &nbsp;{' '}
             <span
-              className='iconify slider-iconfiy'
+              className='iconify slider-iconify'
               data-icon='twemoji:green-circle'
               data-inline='false'
             ></span>
@@ -76,7 +70,7 @@ export default function ProjectDetailsModal({
           <AwesomeSlider className='slider-image'>{img}</AwesomeSlider>
         </div>
         <div className='col-md-10 mx-auto'>
-          <h3 id='projectModalTitle' style={{ padding: '5px 5px 0 5px' }}>
+          <h3 id='projectModalTitle'>
             {title}
             {url ? (
               <a
@@ -85,10 +79,7 @@ export default function ProjectDetailsModal({
                 rel='noopener noreferrer'
                 className='link-href'
               >
-                <i
-                  className='fas fa-external-link-alt'
-                  style={{ marginLeft: '10px' }}
-                ></i>
+                <div className='fas fa-external-link-alt p-2'></div>
               </a>
             ) : null}
           </h3>
