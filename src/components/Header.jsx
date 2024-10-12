@@ -3,6 +3,7 @@ import Switch from 'react-switch';
 import Nav from 'react-bootstrap/Nav';
 import { LinkContainer } from 'react-router-bootstrap';
 import PropTypes from 'prop-types';
+import '../scss/header-iconify-svgs.scss';
 
 export default function Header({ sharedData }) {
   const [checked, setChecked] = useState(false);
@@ -38,7 +39,7 @@ export default function Header({ sharedData }) {
   });
 
   return (
-    <header id='home' style={{ height: '35vh', display: 'block' }}>
+    <header id='home'>
       <a
         href='https://github.com/nojronatron/portfolio'
         target='_blank'
@@ -76,11 +77,7 @@ export default function Header({ sharedData }) {
           ></path>
         </svg>
       </a>
-      <Nav
-        activeKey='/home'
-        fill
-        style={{ position: 'absolute', top: 10, right: 10 }}
-      >
+      <Nav className='d-flex justify-content-end' activeKey='/home'>
         <Nav.Item>
           <LinkContainer to='/'>
             <Nav.Link href='/'>Home</Nav.Link>
@@ -95,46 +92,19 @@ export default function Header({ sharedData }) {
           <Switch
             checked={checked}
             onChange={onThemeSwitchChange}
-            offColor='#baaa80'
-            onColor='#353535'
-            className='react-switch mx-auto'
+            offColor='#222222'
+            onColor='#555500'
+            onHandleColor='#888888'
+            offHandleColor='#aaaaaa'
             width={90}
             height={40}
-            uncheckedIcon={
-              <span
-                className='iconify'
-                data-icon='twemoji:owl'
-                data-inline='false'
-                style={{
-                  display: 'block',
-                  height: '100%',
-                  fontSize: 25,
-                  textAlign: 'end',
-                  marginLeft: '20px',
-                  color: '#353239',
-                }}
-              ></span>
-            }
-            checkedIcon={
-              <span
-                className='iconify'
-                data-icon='noto-v1:sun-with-face'
-                data-inline='false'
-                style={{
-                  display: 'block',
-                  height: '100%',
-                  fontSize: 25,
-                  textAlign: 'end',
-                  marginLeft: '10px',
-                  color: '#353239',
-                }}
-              ></span>
-            }
+            uncheckedIcon={<span className='noto--crescent-moon'></span>}
+            checkedIcon={<span className='noto-v1--sun'></span>}
             id='icon-switch'
           />
         </Nav.Item>
       </Nav>
-      <div className='row aligner' style={{ height: '40vh' }}>
+      <div className='row aligner'>
         <div className='col-md-12'>
           <div>
             <img
