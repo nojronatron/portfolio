@@ -104,21 +104,14 @@ export default function Header({ sharedData }) {
           />
         </Nav.Item>
       </Nav>
-      <div className='row aligner'>
-        <div className='col-md-12'>
-          <div>
-            <img
-              className='header-image'
-              src='images/jon-happy-shot-apr-22.jpg'
-              alt='Jon smiling while sitting at his computer desk'
-            />
-            <br />
-            <h1 className='mb-0'>{name}</h1>
-            <div className='title-container'>
-              <HeaderTitleTypeAnimation />
-            </div>
-          </div>
-        </div>
+      <div className='mouse-arrow-only'>
+        <img
+          className='header-image'
+          src='images/jon-happy-shot-apr-22.jpg'
+          alt='Jon smiling while sitting at his computer desk'
+        />
+        <h1 className='mb-0'>{name}</h1>
+        <HeaderTitleTypeAnimation />
       </div>
     </header>
   );
