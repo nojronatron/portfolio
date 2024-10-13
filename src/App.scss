@@ -73,7 +73,6 @@ header :link {
 }
 
 .project-date {
-  // font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 8px 15px 2px 15px;
   position: relative;
@@ -85,7 +84,6 @@ header :link {
 }
 
 header h1 {
-  // font-size: 400%;
   text-align: center;
   font-weight: 600 !important;
   color: #353239;
@@ -192,14 +190,12 @@ header h1 {
 }
 
 .experience-icon {
-  // font-size: 300%;
   margin-top: 25%;
   text-align: center;
 }
 
 @media only screen and (max-width: 1170px) {
   .experience-icon {
-    // font-size: 170%;
     margin-top: 27%;
     text-align: center;
   }
@@ -220,7 +216,6 @@ header h1 {
   text-align: justify;
   padding: 5px 5px 0 5px;
   margin-bottom: 20px;
-  // font-size: 1.6em;
 }
 
 #portfolio {
