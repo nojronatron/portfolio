@@ -14,7 +14,10 @@ export default function App() {
 
   return (
     <Router>
-      <Header sharedBasicInfo={sharedData.basic_info} />
+      <Header
+        sharedBasicInfo={sharedData.basic_info}
+        resumeExperience={resumeData.experience}
+      />
       <Routes>
         <Route
           exact
