@@ -23,11 +23,7 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
   ) {
     var projects = resumeProjects.map(function (projects) {
       return (
-        <div
-          className='col-sm-12 col-md-6 col-lg-4'
-          key={projects.title}
-          style={{ cursor: 'pointer' }}
-        >
+        <div className='col-sm-12 col-md-6 col-lg-4' key={projects.title}>
           <span className='portfolio-item d-block'>
             <div className='foto' onClick={() => setDetailsModalShow(projects)}>
               <div>
@@ -35,11 +31,6 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
                   src={projects.images[0]}
                   alt='projectImages'
                   width='100%'
-                  style={{
-                    marginBottom: 0,
-                    paddingBottom: 0,
-                    position: 'relative',
-                  }}
                 />
                 <span className='project-date'>{projects.startDate}</span>
                 <br />
@@ -55,7 +46,7 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
   return (
     <section id='portfolio'>
       <div className='col-md-12'>
-        <h1 className='section-title' style={{ color: 'black' }}>
+        <h1 className='section-title'>
           <span>{sectionName}</span>
         </h1>
         <div className='col-md-12 mx-auto'>
