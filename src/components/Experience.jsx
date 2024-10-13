@@ -13,20 +13,22 @@ export default function Experience({ resumeExperience, resumeBasicInfo }) {
       const technologies = work.technologies;
       const mainTechnologies = work.mainTech;
 
-      var mainTech = mainTechnologies.map((technology, i) => {
+      var mainTech = mainTechnologies.map((mainTechnology, j) => {
         return (
-          <Badge pill className='main-badge mr-2 mb-2' key={i}>
+          <Badge pill className='main-badge mr-2 mb-2' key={j}>
+            {mainTechnology}
+          </Badge>
+        );
+      });
+
+      var tech = technologies.map((technology, k) => {
+        return (
+          <Badge pill className='experience-badge mr-2 mb-2' key={k}>
             {technology}
           </Badge>
         );
       });
-      var tech = technologies.map((technology, i) => {
-        return (
-          <Badge pill className='experience-badge mr-2 mb-2' key={i}>
-            {technology}
-          </Badge>
-        );
-      });
+
       return (
         <VerticalTimelineElement
           className='vertical-timeline-element--work'
@@ -54,7 +56,7 @@ export default function Experience({ resumeExperience, resumeBasicInfo }) {
     <section id='resume'>
       <h1 className='section-title text-black'>{sectionName} </h1>
       <VerticalTimeline>
-        {work}
+        <div className='workExperience'>{work}</div>
         <VerticalTimelineElement
           iconStyle={{
             background: '#AE944F',
