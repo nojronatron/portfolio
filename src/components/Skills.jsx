@@ -1,35 +1,21 @@
-import { Icon } from '@iconify/react';
 import PropTypes from 'prop-types';
+import GetCodeLanguageIcons from './GetCodeLanguageIcons.jsx';
+import GetToolFrameworkIcons from './GetToolFrameworkIcons.jsx';
 
 export default function Skills({ sharedSkills, resumeBasicInfo }) {
-  if (sharedSkills && resumeBasicInfo) {
+  if (resumeBasicInfo) {
     var codeSkillsSection = resumeBasicInfo.section_name.codingLanguages;
     var toolsSection = resumeBasicInfo.section_name.tools;
   }
 
   if (sharedSkills !== undefined) {
-    var codingIcons = sharedSkills.codingLanguages.map(function (
-      codeLang,
-      idx
-    ) {
-      return (
-        <div className='mx-3 text-center skills-tile' key={idx}>
-          <Icon icon={codeLang.icon} className='skill-icon' />
-          <p className='skill-icon-text'>{codeLang.name}</p>
-        </div>
-      );
-    });
+    var codingLanguages = sharedSkills.codingLanguages;
+    var codingIcons = GetCodeLanguageIcons({ codingLanguages });
   }
 
   if (sharedSkills !== undefined) {
-    var toolsIcons = sharedSkills.tools.map(function (tool, idx) {
-      return (
-        <div className='mx-3 text-center skills-tile' key={idx}>
-          <Icon icon={tool.icon} className='skill-icon' />
-          <p className='skill-icon-text'>{tool.name}</p>
-        </div>
-      );
-    });
+    var toolsFrameworks = sharedSkills.tools;
+    var toolsIcons = GetToolFrameworkIcons({ toolsFrameworks });
   }
 
   return (
