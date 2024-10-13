@@ -26,7 +26,7 @@ export default function App() {
           element={
             <About
               resumeBasicInfo={resumeData.basic_info}
-              sharedBasicInfo={sharedData.basic_info}
+              portfolioData={sharedData}
             />
           }
         ></Route>
