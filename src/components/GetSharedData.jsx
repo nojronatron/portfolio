@@ -14,6 +14,7 @@ export default function GetSharedData() {
         setData(data);
       },
       error: function (xhr, status, err) {
+        console.error(err);
         alert(err);
       },
     });
