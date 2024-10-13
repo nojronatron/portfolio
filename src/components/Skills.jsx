@@ -13,25 +13,10 @@ export default function Skills({ sharedSkills, resumeBasicInfo }) {
       idx
     ) {
       return (
-        <li
-          className='mx-3'
-          key={idx}
-          style={{
-            display: 'inline-block',
-          }}
-        >
-          <div className='text-center skills-tile'>
-            <Icon
-              icon={codeLang.icon}
-              style={{
-                display: 'block',
-                fontSize: '2em',
-                margin: '0 auto',
-              }}
-            />
-            <p style={{ fontSize: '1em' }}>{codeLang.name}</p>
-          </div>
-        </li>
+        <div className='mx-3 text-center skills-tile' key={idx}>
+          <Icon icon={codeLang.icon} className='skill-icon' />
+          <p className='skill-icon-text'>{codeLang.name}</p>
+        </div>
       );
     });
   }
@@ -39,45 +24,24 @@ export default function Skills({ sharedSkills, resumeBasicInfo }) {
   if (sharedSkills !== undefined) {
     var toolsIcons = sharedSkills.tools.map(function (tool, idx) {
       return (
-        <li className='mx-3' key={idx} style={{ display: 'inline-block' }}>
-          <div className='text-center skills-tile'>
-            <Icon
-              icon={tool.icon}
-              style={{ display: 'block', fontSize: '2em', margin: '0 auto' }}
-            />
-            <p style={{ fontSize: '1em' }}>{tool.name}</p>
-          </div>
-        </li>
+        <div className='mx-3 text-center skills-tile' key={idx}>
+          <Icon icon={tool.icon} className='skill-icon' />
+          <p className='skill-icon-text'>{tool.name}</p>
+        </div>
       );
     });
   }
 
   return (
     <section id='skills'>
-      <div className='col-md-12'>
-        <div className='col-md-12'>
-          <h1 className='section-title'>
-            <span className='text-white'>{codeSkillsSection}</span>
-          </h1>
-        </div>
-        <div className='col-md-12 text-center'>
-          <ul className='list-inline mx-auto skill-icon'>
-            {sharedSkills && codingIcons}
-          </ul>
-        </div>
+      <h1 className='section-title'>{codeSkillsSection}</h1>
+      <div className='d-flex my-3 justify-content-center flex-wrap'>
+        {sharedSkills && codingIcons}
       </div>
 
-      <div className='col-md-12'>
-        <div className='col-md-12'>
-          <h1 className='section-title'>
-            <span className='text-white'>{toolsSection}</span>
-          </h1>
-        </div>
-        <div className='col-md-12 text-center'>
-          <ul className='list-inline mx-auto skill-icon'>
-            {sharedSkills && toolsIcons}
-          </ul>
-        </div>
+      <h1 className='section-title'>{toolsSection}</h1>
+      <div className='d-flex my-3 justify-content-center flex-wrap'>
+        {sharedSkills && toolsIcons}
       </div>
     </section>
   );
