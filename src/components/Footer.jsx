@@ -20,21 +20,17 @@ export default function Footer({ sharedBasicInfo }) {
         id='foot'
         className='d-flex justify-content-between p-2 align-items-center'
       >
-        <div className='d-flex justify-content-evenly align-items-center'>
+        <div className='d-flex justify-content align-items-center'>
           {networks}
-          <div>
-            <img
-              className='jr-software-logo'
-              src='images/jrsoftware-logo-128x128.png'
-              alt='JR Software'
-            />
-          </div>
+          <img
+            className='jr-software-logo'
+            src='images/jrsoftware-logo-128x128.png'
+            alt='JR Software'
+          />
         </div>
-        <div className='revision-text'>
-          Revision {revision}
-          {', '}
-          {sharedBasicInfo ? sharedBasicInfo.name : '???'}
-        </div>
+        <p className='revision-text'>
+          Revision {revision}, {sharedBasicInfo ? sharedBasicInfo.name : '???'}
+        </p>
       </footer>
     );
   }
