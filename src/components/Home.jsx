@@ -7,7 +7,7 @@ export default function Home({ resumeData, sharedData }) {
   const resumeInfo = resumeData;
 
   return (
-    <div>
+    <article className='position-static'>
       <Projects
         resumeProjects={resumeInfo.projects}
         resumeBasicInfo={resumeInfo.basic_info}
@@ -20,7 +20,7 @@ export default function Home({ resumeData, sharedData }) {
         resumeExperience={resumeInfo.experience}
         resumeBasicInfo={resumeInfo.basic_info}
       />
-    </div>
+    </article>
   );
 }
 
