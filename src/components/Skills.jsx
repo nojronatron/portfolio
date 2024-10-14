@@ -14,14 +14,16 @@ export default function Skills({ sharedSkills, resumeBasicInfo }) {
 
   return (
     <section id='skills'>
-      <h1 className='section-title'>
+      <h1 className='section-title title-text-light'>
         {resumeBasicInfo.section_name.codingLanguages}
       </h1>
       <div className='d-flex my-3 justify-content-center flex-wrap'>
         {codingIcons}
       </div>
 
-      <h1 className='section-title'>{resumeBasicInfo.section_name.tools}</h1>
+      <h1 className='section-title title-text-light'>
+        {resumeBasicInfo.section_name.tools}
+      </h1>
       <div className='d-flex my-3 justify-content-center flex-wrap'>
         {toolsIcons}
       </div>
