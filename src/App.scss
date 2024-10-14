@@ -3,8 +3,21 @@
 @use '/src/scss/themes/theme-light.scss';
 
 html {
-  margin: 0;
-  padding: 0;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-link {
+    font-size: 8px;
+  }
 }
 
 .mouse-arrow-only {
@@ -25,7 +38,7 @@ article {
 
 header {
   text-align: center;
-  background-color: #e9d5a1;
+  background-color: var(--jrcolor-brown);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,13 +50,14 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.6rem;
     height: 54px;
-    background-color: burlywood;
+    background-color: var(--jrcolor-yellow);
     z-index: 900;
+    border-bottom: var(--jrcolor-brown) 2px solid;
   }
 }
 
 header :link {
-  color: blue;
+  color: var(--jrcolor-bluelink);
   text-decoration-line: underline;
 }
 
@@ -80,16 +94,16 @@ header :link {
   padding: 8px 15px 2px 15px;
   position: relative;
   z-index: -500;
-  border-top: 5px solid #696969;
+  // border-top: 5px solid #696969;
   border-radius: 0 0 5px 5px;
-  background-color: #696969;
-  color: white;
+  background-color: var(--jrcolor-midgray);
+  // color: var(--jr-color-yellow);
 }
 
 header h1 {
   text-align: center;
   font-weight: 600 !important;
-  color: #353239;
+  color: var(--jrcolor-darkblue);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0 auto 18px auto;
   width: 100%;
@@ -99,17 +113,18 @@ header h1 {
   border: 5px solid #d7caaa;
 }
 
+// todo: determine purpose of this class
 .slider-tab {
-  background-color: #d7caaa;
+  background-color: var(--jrcolor-midgray);
   height: 25px;
 }
 
 .slider-iconify {
-  margin-top: 10px;
+  margin: 3px;
 }
 
 #about {
-  background: #fff;
+  background: var(--jrcolor-midgray);
   overflow: hidden;
 
   :hover,
@@ -123,7 +138,7 @@ header h1 {
   font: 18px/24px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: black;
+  color: var(--jrcolor-black);
   text-align: center;
 }
 
@@ -137,7 +152,7 @@ header h1 {
 }
 
 .foto div {
-  background: #ffffff;
+  background: var(--jrcolor-lightgray);
   display: inline-block;
   margin: 0 auto 5% auto;
   padding: 10px 10px 5px;
@@ -154,7 +169,7 @@ header h1 {
 }
 
 .foto div:after {
-  color: #333;
+  // color: #333;
   content: attr(title);
   position: relative;
   top: 15px;
@@ -176,12 +191,12 @@ header h1 {
   font: 18px/24px 'opensans-bold', sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: black;
+  color: var(--jrcolor-darkblue);
   text-align: center;
 }
 
 .link-href {
-  color: black;
+  color: var(--jrcolor-darkgreen);
 }
 
 .wave {
@@ -189,7 +204,7 @@ header h1 {
 }
 
 #resume {
-  background: #efe1bd;
+  background: var(--jrcolor-yellow);
 }
 
 .experience-icon {
@@ -211,7 +226,7 @@ header h1 {
 }
 
 .close-icon {
-  color: black;
+  color: var(--jrcolor-black);
   font-weight: lighter !important;
 }
 
@@ -222,7 +237,7 @@ header h1 {
 }
 
 #portfolio {
-  background: #efe1bd;
+  background: var(--jrcolor-yellow);
   padding-bottom: 2rem;
 }
 
@@ -248,10 +263,10 @@ header h1 {
   }
 }
 
-.header-sub-titles {
+.header-sub-title {
   color: var(--jrcolor-darkblue);
   background-color: var(--jrcolor-lightgray);
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-left: 1rem;
@@ -260,22 +275,36 @@ header h1 {
   border-radius: 2rem;
 }
 
+.header-sub-titles {
+  width: 100%;
+}
+
 #skills {
-  background: #1f1f1f;
+  background: var(--jrcolor-darkgray);
   padding-bottom: 4px;
 }
 
 .section-title {
+  font-weight: 700;
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
   text-align: center;
 }
 
+.title-text-dark {
+  color: var(--jrcolor-darkgreen);
+  background: transparent;
+}
+
+.title-text-light {
+  color: var(--jrcolor-yellow);
+  background: transparent;
+}
+
 .skills-tile {
-  background-color: rgba(248, 245, 244, 0.2);
+  background-color: var(--jrcolor-black);
   padding: 10px 10px 5px 10px;
   margin: 5px 0 5px 0;
   border-radius: 8px;
@@ -292,7 +321,8 @@ header h1 {
 
 .skill-icon-text {
   font-size: 1rem;
-  color: white;
+  font-weight: 700;
+  color: var(--jrcolor-lightgray);
 }
 
 .list-inline {
@@ -301,7 +331,7 @@ header h1 {
 }
 
 footer {
-  background-color: #6d634b;
+  background-color: var(--jrcolor-brown);
   min-height: 80px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -313,7 +343,7 @@ footer a {
   :visited,
   :hover,
   :focus {
-    color: #fff;
+    color: var(--jrcolor-darkblue);
   }
 }
 
