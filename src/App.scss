@@ -1,3 +1,4 @@
+@use '/src/scss/colors.scss';
 @use '/src/scss/themes/theme-dark.scss';
 @use '/src/scss/themes/theme-light.scss';
 
@@ -7,19 +8,19 @@ html {
 }
 
 .mouse-arrow-only {
+  margin-top: 42px;
   cursor: default;
 }
 
 .header-image {
-  width: 32vw;
+  width: 26vw;
   border-radius: 50%;
   border: 5px solid #4e4a3e;
   margin: 1rem;
 }
 
 article {
-  z-index: 999;
-  margin-top: 32vw;
+  z-index: 0;
 }
 
 header {
@@ -30,12 +31,14 @@ header {
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
-  z-index: 1;
 
   .nav {
     font-size: 1.6rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 0.6rem;
+    height: 54px;
+    background-color: burlywood;
+    z-index: 900;
   }
 }
 
@@ -243,6 +246,18 @@ header h1 {
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
+}
+
+.header-sub-titles {
+  color: var(--jrcolor-darkblue);
+  background-color: var(--jrcolor-lightgray);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: var(--jrcolor-darkblue) 2px dotted;
+  border-radius: 2rem;
 }
 
 #skills {
