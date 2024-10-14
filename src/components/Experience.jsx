@@ -54,7 +54,7 @@ export default function Experience({ resumeExperience, resumeBasicInfo }) {
 
   return (
     <section id='resume'>
-      <h1 className='section-title text-black'>{sectionName} </h1>
+      <h1 className='section-title'>{sectionName} </h1>
       <VerticalTimeline>
         <div className='workExperience'>{work}</div>
         <VerticalTimelineElement
