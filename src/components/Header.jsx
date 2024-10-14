@@ -5,10 +5,10 @@ import { LinkContainer } from 'react-router-bootstrap';
 import PropTypes from 'prop-types';
 import '../scss/header-iconify-svgs.scss';
 
-export default function Header({ sharedBasicInfo, resumeExperience }) {
+export default function Header({ sharedBasicInfo }) {
   const [checked, setChecked] = useState(false);
 
-  if (sharedBasicInfo && resumeExperience) {
+  if (sharedBasicInfo) {
     const onThemeSwitchChange = () => {
       if (checked == true) {
         setChecked(false);
@@ -27,17 +27,16 @@ export default function Header({ sharedBasicInfo, resumeExperience }) {
       body.setAttribute(dataThemeAttribute, newTheme);
     };
 
-    let displayTitles = resumeExperience.map((experience, idx) => {
-      let upperTitle = experience.title.toUpperCase();
-      return idx < resumeExperience.length - 1 ? (
-        <span key={idx}>{upperTitle} | </span>
-      ) : (
-        <span key={idx}>{upperTitle}</span>
+    const displayTitles = sharedBasicInfo.titles.map((title, idx) => {
+      return (
+        <div key={idx} className='header-sub-title'>
+          {title}
+        </div>
       );
     });
 
     return (
-      <header id='home' className='position-fixed top-0 pb-2'>
+      <header id='home' className='pb-2'>
         <a
           href='https://github.com/nojronatron/portfolio'
           target='_blank'
@@ -52,7 +51,7 @@ export default function Header({ sharedBasicInfo, resumeExperience }) {
             style={{
               fill: '#151513',
               color: '#fff',
-              position: 'absolute',
+              position: 'fixed',
               top: 0,
               left: 0,
               transform: 'scale(-1, 1)',
@@ -75,7 +74,7 @@ export default function Header({ sharedBasicInfo, resumeExperience }) {
           </svg>
         </a>
         <Nav
-          className='d-flex justify-content-end align-items-center mx-2'
+          className='d-flex justify-content-end align-items-center mx-2 position-fixed top-0 w-100'
           activeKey='/home'
         >
           <Nav.Item>
@@ -111,7 +110,9 @@ export default function Header({ sharedBasicInfo, resumeExperience }) {
             alt='Jon smiling while sitting at his computer desk'
           />
           <h1 className='mb-0'>{sharedBasicInfo.name}</h1>
-          <div>{displayTitles}</div>
+          <div className='d-flex justify-content-evenly flex-wrap header-sub-titles'>
+            {displayTitles}
+          </div>
         </div>
       </header>
     );
@@ -120,5 +121,4 @@ export default function Header({ sharedBasicInfo, resumeExperience }) {
 
 Header.propTypes = {
   sharedBasicInfo: PropTypes.object,
-  resumeExperience: PropTypes.array,
 };
