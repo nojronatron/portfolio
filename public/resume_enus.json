@@ -295,7 +295,7 @@
       "company": "Citrix Systems, Inc",
       "title": "Computer Lab Tech",
       "years": "2004 - 2006",
-      "mainTech": ["Build, Maintain PCs", "Maintain Lab", "Manage LAN."],
+      "mainTech": ["Build, Maintain PCs", "Maintain Lab", "Manage LAN"],
       "technologies": [
         "Windows Server",
         "Windows Desktop",
@@ -309,7 +309,7 @@
       "company": "Cascadia College",
       "title": "Helpdesk Support",
       "years": "2003, 2004",
-      "mainTech": ["Staff, Student Tech Spprt", "IT generalist."],
+      "mainTech": ["Staff, Student Tech Spprt", "IT generalist"],
       "technologies": [
         "Technical Support",
         "Helpdesk Application",
