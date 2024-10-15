@@ -17,8 +17,8 @@ export default function About({ resumeBasicInfo, portfolioData }) {
 
     return (
       <article id='about'>
-        <div className='card rounded-4'>
-          <div className='card-header rounded-top-4'>
+        <div className='card'>
+          <div className='card-header'>
             <h1>{sectionName}</h1>
           </div>
           <div className='card-body text-justify '>
