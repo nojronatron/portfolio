@@ -1,12 +1,39 @@
 :root {
   --jrcolor-lightblue: rgb(205, 241, 255);
-  --jrcolor-yellow: rgb(255, 218, 70);
-  --jrcolor-bluelink: rgb(0, 0, 255);
+  --jrcolor-brightblue: rgb(190, 250, 255); //#3efbff;
+  --jrcolor-bluelink: rgb(0, 0, 255); // hyperlink default color
   --jrcolor-darkblue: rgb(65, 75, 178);
+  --jrcolor-darkblue2: rgb(0, 0, 144); // #000090;
+
+  --jrcolor-lightyellow: rgb(255, 249, 195); //#ffefc3;
+  --jrcolor-yellow: rgb(255, 218, 70);
+  --jrcolor-mediumyellow: rgb(162, 138, 44); // #a28a2c;
+  --jrcolor-darkyellow: rgb(93, 80, 26); // #5d501a;
   --jrcolor-brown: rgb(106, 91, 39);
+
+  --jrcolor-lightgreen: rgb(0, 221, 0); // #00dd00;
+  --jrcolor-brightgreen: rgb(0, 170, 0); // #00aa00;
+  --jrcolor-mediumgreen: rgb(0, 102, 0); // #006600;
   --jrcolor-darkgreen: rgb(0, 100, 0);
+
   --jrcolor-lightgray: rgb(240, 240, 240);
   --jrcolor-midgray: rgb(200, 200, 200);
   --jrcolor-darkgray: rgb(100, 100, 100);
   --jrcolor-black: rgb(20, 20, 20);
+
+  --slidertab-background: var(--jrcolor-midgray);
+  --about-background: var(--jrcolor-mediumgreen);
+  --foto-background: var(--jrcolor-lightgray);
+  --resume-background: var(--jrcolor-mediumgreen);
+  --portfolio-background: var(--jrcolor-mediumgreen);
+  --headersubtitle-background: var(--jrcolor-lightgray);
+  --skills-background: var(--jrcolor-darkgray);
+  --skillstitle-background: var(--jrcolor-black);
+  --footer-background: var(--jrcolor-yellow);
+  --header-background: var(--jrcolor-mediumyellow);
+  --nav-background: var(--jrcolor-yellow);
+  --projectdate-background: var(--jrcolor-midgray);
+  --sectiontitle-textcolor: var(--jrcolor-yellow);
+
+  --experienceIcon-color: var(--jrcolor-lightyellow);
 }
