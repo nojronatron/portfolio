@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 export default function GetCodeLanguageIcons({ codingLanguages }) {
   return codingLanguages.map(function (codeLang, idx) {
     return (
-      <div className='mx-3 text-center skills-tile' key={idx}>
+      <div className='text-center skills-tile' key={idx}>
         <Icon icon={codeLang.icon} className='skill-icon' />
         <p className='skill-icon-text'>{codeLang.name}</p>
       </div>
