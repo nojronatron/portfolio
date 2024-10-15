@@ -17,12 +17,12 @@ export default function Skills({ sharedSkills, resumeBasicInfo }) {
       <h1 className='section-title'>
         {resumeBasicInfo.section_name.codingLanguages}
       </h1>
-      <div className='d-flex my-3 justify-content-center flex-wrap'>
+      <div className='d-flex justify-content-center flex-wrap'>
         {codingIcons}
       </div>
 
       <h1 className='section-title'>{resumeBasicInfo.section_name.tools}</h1>
-      <div className='d-flex my-3 justify-content-center flex-wrap'>
+      <div className='d-flex justify-content-center flex-wrap'>
         {toolsIcons}
       </div>
     </section>
