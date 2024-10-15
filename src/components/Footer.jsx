@@ -9,7 +9,7 @@ export default function Footer({ sharedBasicInfo }) {
       return (
         <div key={network.name} className='m-4'>
           <a href={network.url} target='_blank' rel='noopener noreferrer'>
-            <Icon icon={network.class} width='4em' height='4em'></Icon>
+            <Icon icon={network.class} className='footer-devicons'></Icon>
           </a>
         </div>
       );
@@ -22,13 +22,15 @@ export default function Footer({ sharedBasicInfo }) {
       >
         <div className='d-flex justify-content align-items-center'>
           {networks}
-          <img
-            className='jr-software-logo'
-            src='images/jrsoftware-logo-128x128.png'
-            alt='JR Software'
-          />
+          <div className='m-4'>
+            <img
+              className='jr-software-logo'
+              src='images/jrsoftware-logo-128x128.png'
+              alt='JR Software'
+            />
+          </div>
         </div>
-        <p className='revision-text'>
+        <p className='m-4 revision-text'>
           Revision {revision}, {sharedBasicInfo ? sharedBasicInfo.name : '???'}
         </p>
       </footer>
