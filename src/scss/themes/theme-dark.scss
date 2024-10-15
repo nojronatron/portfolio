@@ -27,7 +27,8 @@ body[data-theme='dark'] {
   }
 
   header {
-    background-color: #494949;
+    background-color: #a59753;
+
     h1 {
       color: white;
     }
@@ -35,7 +36,7 @@ body[data-theme='dark'] {
       color: white;
     }
   }
-  
+
   #about {
     background-color: #7f7f7f;
     h1 span {
@@ -52,14 +53,13 @@ body[data-theme='dark'] {
     .card-header {
       background: #464646;
       h1 {
-      color: white;
+        color: white;
+      }
     }
-  }
-      
+
     .profile-pic {
       box-shadow: 8px 10px 5px 0px #a59753;
     }
-
   }
 
   .themed-boxshadow {
@@ -81,30 +81,30 @@ body[data-theme='dark'] {
 
   #resume {
     filter: brightness(80%);
-    background: #5b5b5b;
+    background: var(--jrcolor-darkgray);
     .section-title {
-      color: white !important;
+      color: var(--jrcolor-lightblue);
     }
 
     .experience-badge {
-      background: #919191 !important;
-      color: white;
+      background: var(--jrcolor-mediumgray);
+      color: var(--jrcolor-lightblue);
     }
 
     .main-badge {
-      background: #919191 !important;
+      background: var(--jrcolor-mediumgray);
     }
 
     .vertical-timeline-element-date {
-      color: white;
+      color: var(--jrcolor-lightblue);
     }
 
     .vertical-timeline-element-icon {
-      background: #919191 !important;
+      background: var(--jrcolor-mediumgray);
     }
     @media only screen and (max-width: 1169px) {
       .vertical-timeline-element-date {
-        color: black;
+        color: var(--jrcolor-black);
       }
     }
   }
@@ -128,7 +128,6 @@ body[data-theme='dark'] {
     color: white;
   }
 
-  
   .header-image {
     width: 350px;
     border-radius: 50%;
