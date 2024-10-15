@@ -46,9 +46,7 @@ export default function Projects({ resumeProjects, resumeBasicInfo }) {
   return (
     <section id='portfolio'>
       <div className='col-md-12'>
-        <h1 className='section-title  title-text-dark'>
-          <span>{sectionName}</span>
-        </h1>
+        <h1 className='section-title'>{sectionName}</h1>
         <div className='col-md-12 mx-auto'>
           <div className='row mx-auto'>{projects}</div>
         </div>
