@@ -103,8 +103,8 @@ header h1 {
   text-align: center;
   font-weight: 600 !important;
   color: var(--jrcolor-darkblue2);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 0 auto 18px auto;
+  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  // margin: 0 auto 18px auto;
   width: 100%;
 }
 
@@ -135,7 +135,8 @@ header h1 {
 
 #about h1 {
   padding-top: 1em;
-  font: 18px/24px 'opensans-bold', sans-serif;
+  // font: 18px/24px 'opensans-bold', sans-serif;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--jrcolor-black);
@@ -205,10 +206,6 @@ header h1 {
 
 #resume {
   background: var(--resume-background);
-}
-
-.section-title {
-  color: var(--sectiontitle-textcolor);
 }
 
 .experience-badge {
@@ -316,6 +313,7 @@ section {
 
 .section-title {
   color: var(--sectiontitle-textcolor);
+  font-size: 2rem;
   font-weight: 700;
   padding-top: 8px;
   padding-bottom: 5px;
