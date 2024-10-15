@@ -327,9 +327,8 @@ section {
 
 .skills-tile {
   background-color: var(--skillstitle-background);
-  padding: 10px 10px 5px 10px;
-  margin: 5px 0 5px 0;
-  border-radius: 1rem;
+  border-radius: 10px;
+  margin: 6px;
 
   :hover,
   :active {
@@ -339,12 +338,14 @@ section {
 
 .skill-icon {
   font-size: 1.6rem;
+  margin: 6px 8px;
 }
 
 .skill-icon-text {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--jrcolor-lightgray);
+  margin: 0px 6px 6px 6px;
 }
 
 .list-inline {
@@ -369,20 +370,45 @@ footer a {
   }
 }
 
-.jr-software-logo {
+.footer-devicons {
+  width: 56px;
+  height: 56px;
   margin: 15px;
-  width: 5em;
-  border-radius: 50%;
+
+  @media (max-width: 600px) {
+    width: 28px;
+    height: 28px;
+    margin: 7px;
+  }
+}
+
+.jr-software-logo {
+  width: 56px;
+  height: 56px;
+  margin: 15px;
   border: 5px solid var(--jrcolor-darkyellow);
+  border-radius: 50%;
+
+  @media (max-width: 600px) {
+    width: 28px;
+    height: 28px;
+    margin: 7px;
+    border: 2px solid var(--jrcolor-darkyellow);
+  }
 }
 
 .revision-text {
-  font-size: 1.5rem;
-  padding-right: 4px;
   cursor: default; // force default cursor style
 
   :hover {
     cursor: default; // enforce default cursor on hover
+  }
+
+  font-size: 1.5rem;
+  padding-right: 4px;
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
   }
 }
 

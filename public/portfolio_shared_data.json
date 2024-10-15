@@ -91,7 +91,11 @@
         "icon": "vscode-icons:file-type-sql"
       },
       {
-        "name": "JSON, NoSQL",
+        "name": "JSON",
+        "icon": "mdi:code-json"
+      },
+      {
+        "name": "NoSQL",
         "icon": "mdi:code-json"
       }
     ]
