@@ -28,7 +28,7 @@ html {
 .header-image {
   width: 26vw;
   border-radius: 50%;
-  border: 5px solid #4e4a3e;
+  border: 5px solid var(--jrcolor-darkyellow);
   margin: 1rem;
 }
 
@@ -38,21 +38,22 @@ article {
 
 header {
   text-align: center;
-  background-color: var(--jrcolor-brown);
+  background-color: var(--header-background);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   width: 100%;
+  border-bottom: var(--jrcolor-darkyellow) 2px solid;
 
   .nav {
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 0.6rem;
     height: 54px;
-    background-color: var(--jrcolor-yellow);
+    background-color: var(--nav-background);
     z-index: 900;
-    border-bottom: var(--jrcolor-brown) 2px solid;
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
   }
 }
 
@@ -94,28 +95,26 @@ header :link {
   padding: 8px 15px 2px 15px;
   position: relative;
   z-index: -500;
-  // border-top: 5px solid #696969;
   border-radius: 0 0 5px 5px;
-  background-color: var(--jrcolor-midgray);
-  // color: var(--jr-color-yellow);
+  background-color: var(--projectdate-background);
 }
 
 header h1 {
   text-align: center;
   font-weight: 600 !important;
-  color: var(--jrcolor-darkblue);
+  color: var(--jrcolor-darkblue2);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 0 auto 18px auto;
   width: 100%;
 }
 
 .slider-image {
-  border: 5px solid #d7caaa;
+  border: 5px solid var(--jrcolor-darkblue);
 }
 
 // todo: determine purpose of this class
 .slider-tab {
-  background-color: var(--jrcolor-midgray);
+  background-color: var(--slidertab-background);
   height: 25px;
 }
 
@@ -124,8 +123,9 @@ header h1 {
 }
 
 #about {
-  background: var(--jrcolor-midgray);
+  background: var(--about-background);
   overflow: hidden;
+  padding: 2px;
 
   :hover,
   :active {
@@ -152,7 +152,7 @@ header h1 {
 }
 
 .foto div {
-  background: var(--jrcolor-lightgray);
+  background: var(--foto-background);
   display: inline-block;
   margin: 0 auto 5% auto;
   padding: 10px 10px 5px;
@@ -204,13 +204,38 @@ header h1 {
 }
 
 #resume {
-  background: var(--jrcolor-yellow);
+  background: var(--resume-background);
+}
+
+.section-title {
+  color: var(--sectiontitle-textcolor);
+}
+
+.experience-badge {
+  background: var(--jrcolor-lightgray);
+  color: var(--jrcolor-bluelink);
+  padding: 0px 5px;
+  margin: 2px 2px;
+  border-radius: 1rem;
+}
+
+.main-badge {
+  background: var(--jrcolor-lightgray);
+}
+
+.vertical-timeline-element-date {
+  color: var(--jrcolor-lightblue);
+}
+
+.vertical-timeline-element-icon {
+  background: var(--jrcolor-darkblue2);
 }
 
 .experience-icon {
-  margin-top: 25%;
-  text-align: center;
   font-size: 1.8rem;
+  color: var(--experienceIcon-color);
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -238,8 +263,8 @@ header h1 {
 }
 
 #portfolio {
-  background: var(--jrcolor-yellow);
-  padding-bottom: 2rem;
+  background: var(--portfolio-background);
+  padding-bottom: 1rem;
 }
 
 .portfolio-item {
@@ -266,13 +291,13 @@ header h1 {
 
 .header-sub-title {
   color: var(--jrcolor-darkblue);
-  background-color: var(--jrcolor-lightgray);
+  background-color: var(--headersubtitle-background);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-left: 1rem;
   padding-right: 1rem;
-  border: var(--jrcolor-darkblue) 2px dotted;
+  border: var(--jrcolor-darkblue) 1px dotted;
   border-radius: 2rem;
 }
 
@@ -281,34 +306,30 @@ header h1 {
 }
 
 #skills {
-  background: var(--jrcolor-darkgray);
+  background: var(--skills-background);
   padding-bottom: 4px;
 }
 
+section {
+  border-bottom: var(--jrcolor-darkyellow) 2px solid;
+}
+
 .section-title {
+  color: var(--sectiontitle-textcolor);
   font-weight: 700;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 8px;
+  padding-bottom: 5px;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-}
-
-.title-text-dark {
-  color: var(--jrcolor-darkgreen);
-  background: transparent;
-}
-
-.title-text-light {
-  color: var(--jrcolor-yellow);
   background: transparent;
 }
 
 .skills-tile {
-  background-color: var(--jrcolor-black);
+  background-color: var(--skillstitle-background);
   padding: 10px 10px 5px 10px;
   margin: 5px 0 5px 0;
-  border-radius: 8px;
+  border-radius: 1rem;
 
   :hover,
   :active {
@@ -332,7 +353,7 @@ header h1 {
 }
 
 footer {
-  background-color: var(--jrcolor-brown);
+  background-color: var(--footer-background);
   min-height: 80px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -352,7 +373,7 @@ footer a {
   margin: 15px;
   width: 5em;
   border-radius: 50%;
-  border: 5px solid #4e4a3e;
+  border: 5px solid var(--jrcolor-darkyellow);
 }
 
 .revision-text {
@@ -365,7 +386,7 @@ footer a {
   }
 }
 
-.workExperience {
+.work-experience {
   :focus,
   :hover {
     cursor: default;
