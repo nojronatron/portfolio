@@ -236,7 +236,7 @@
       "company": "National Multiple Sclerosis Society",
       "title": "Supplies and Gear HAM",
       "years": "2013 - 2024",
-      "mainTech": ["Communications Infra", "Safety, Support", "Planning"],
+      "mainTech": ["Communications Infra", "Safety", "Support", "Planning"],
       "technologies": [
         "HAM Communications and SME",
         "Network and Comms Infrastructure",

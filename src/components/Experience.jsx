@@ -53,19 +53,22 @@ export default function Experience({ resumeExperience, resumeBasicInfo }) {
   }
 
   return (
-    <section id='resume' className='pb-5'>
-      <div className='col-md-12 mx-auto'>
-        <div className='col-md-12'>
-          <h1 className='section-title' style={{ color: 'black' }}>
-            <span className='text-black' style={{ textAlign: 'center' }}>
-              {sectionName}
-            </span>
-          </h1>
-        </div>
-      </div>
-      <div className='col-md-8 mx-auto'>
-        <VerticalTimeline>{work}</VerticalTimeline>
-      </div>
+    <section id='resume'>
+      <h1 className='section-title'>{sectionName}</h1>
+      <VerticalTimeline>
+        <div className='workExperience'>{work}</div>
+        <VerticalTimelineElement
+          iconStyle={{
+            background: '#AE944F',
+            color: '#fff',
+            textAlign: 'center',
+            fontSize: '1.8em',
+          }}
+          icon={
+            <div className='fas fa-hourglass-start mx-auto experience-icon'></div>
+          }
+        />
+      </VerticalTimeline>
     </section>
   );
 }
