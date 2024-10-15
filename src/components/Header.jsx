@@ -109,7 +109,7 @@ export default function Header({ sharedBasicInfo }) {
             src='images/jon-happy-shot-apr-22.jpg'
             alt='Jon smiling while sitting at his computer desk'
           />
-          <h1 className='mb-0'>{sharedBasicInfo.name}</h1>
+          <h1>{sharedBasicInfo.name}</h1>
           <div className='d-flex justify-content-evenly flex-wrap header-sub-titles'>
             {displayTitles}
           </div>
