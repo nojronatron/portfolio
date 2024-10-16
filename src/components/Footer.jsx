@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 
 export default function Footer({ sharedBasicInfo }) {
-  const revision = '8 October 2024';
+  const revision = '16 October 2024';
 
   if (sharedBasicInfo) {
     var networks = sharedBasicInfo.social.map(function (network) {
