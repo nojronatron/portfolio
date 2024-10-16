@@ -74,7 +74,7 @@ export default function Header({ sharedBasicInfo }) {
           </svg>
         </a>
         <Nav
-          className='d-flex justify-content-end align-items-center mx-2 position-fixed top-0 w-100'
+          className='d-flex justify-content-end align-items-center px-2 position-fixed top-0 w-100'
           activeKey='/home'
         >
           <Nav.Item>
