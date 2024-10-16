@@ -88,19 +88,21 @@ export default function Header({ sharedBasicInfo }) {
             </LinkContainer>
           </Nav.Item>
           <Nav.Item>
-            <Switch
-              checked={checked}
-              onChange={onThemeSwitchChange}
-              offColor='#222222'
-              onColor='#555500'
-              onHandleColor='#888888'
-              offHandleColor='#aaaaaa'
-              width={90}
-              height={40}
-              uncheckedIcon={<span className='noto--crescent-moon'></span>}
-              checkedIcon={<span className='noto-v1--sun'></span>}
-              id='icon-switch'
-            />
+            <label for='icon-switch'>
+              <Switch
+                checked={checked}
+                onChange={onThemeSwitchChange}
+                offColor='#141414'
+                onColor='#6a5b27'
+                onHandleColor='#888888'
+                offHandleColor='#aaaaaa'
+                width={90}
+                height={40}
+                uncheckedIcon={<span className='noto--crescent-moon'></span>}
+                checkedIcon={<span className='noto-v1--sun'></span>}
+                id='icon-switch'
+              />
+            </label>
           </Nav.Item>
         </Nav>
         <div className='mouse-arrow-only'>
