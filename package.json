@@ -1,7 +1,11 @@
 {
   "name": "portfolio",
-  "version": "0.3.0",
+  "version": "1.0.0",
+  "author": "Jon Rumsey https://github.com/nojronatron",
   "private": true,
+  "description": "My personal portfolio website",
+  "license": "MIT - EXCEPT all contents within the public directory which are not to be used without explicit permission from the author.",
+  "homepage": "https://portfolio-jon-rumsey.netlify.app/",
   "type": "module",
   "dependencies": {
     "bootstrap": "^5.3.3",
