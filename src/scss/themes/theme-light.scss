@@ -121,17 +121,17 @@ body[data-theme='light'] {
     :active {
       cursor: default;
     }
+  }
 
-    .skill-icon-text {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--jrcolor-lightgray);
-      margin: 0px 6px 6px 6px;
-    }
+  .skill-icon-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--jrcolor-lightgray);
+    margin: 0px 6px 6px 6px;
+  }
 
-    #resume {
-      background: var(--jrcolor-mediumgreen);
-    }
+  #resume {
+    background: var(--jrcolor-lightgreen);
 
     .experience-badge {
       background: var(--jrcolor-lightgray);
@@ -157,13 +157,47 @@ body[data-theme='light'] {
       font-size: 1.8rem;
       color: var(--jrcolor-lightyellow);
       margin-top: 1rem;
-      margin-left: 1rem;
+      margin-left: 0.7rem;
     }
   }
 
   #portfolio {
-    background: var(--portfolio-background);
+    background: var(--jrcolor-lightgreen);
     padding-bottom: 1rem;
+  }
+
+  .foto div {
+    background: var(--jrcolor-lightgray);
+    display: inline-block;
+    margin: 0 auto 5% auto;
+    padding: 10px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px var(--jrcolor-black);
+    -moz-box-shadow: 0 4px 6px var(--jrcolor-black);
+    box-shadow: 0 4px 6px var(--jrcolor-black);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    z-index: 0;
+    position: relative;
+  }
+
+  .foto div:after {
+    content: attr(title);
+    position: relative;
+    top: 15px;
+  }
+
+  .foto div:hover {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    transform: scale(1.01);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px var(--jrcolor-black);
+    -moz-box-shadow: 0 10px 20px var(--jrcolor-black);
+    box-shadow: 0 10px 20px var(--jrcolor-black);
+    cursor: pointer;
   }
 
   section {

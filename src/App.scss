@@ -74,40 +74,6 @@ header :link {
   box-shadow: 8px 10px 5px 0px #6d634b;
 }
 
-.foto div {
-  background: var(--jrcolor-yellow);
-  display: inline-block;
-  margin: 0 auto 5% auto;
-  padding: 10px 10px 5px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px var(--jrcolor-black);
-  -moz-box-shadow: 0 4px 6px var(--jrcolor-black);
-  box-shadow: 0 4px 6px var(--jrcolor-black);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  z-index: 0;
-  position: relative;
-}
-
-.foto div:after {
-  content: attr(title);
-  position: relative;
-  top: 15px;
-}
-
-.foto div:hover {
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  transform: scale(1.01);
-  z-index: 10;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-}
-
 .wave {
   font-size: 1.8rem;
 }

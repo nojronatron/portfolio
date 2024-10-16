@@ -107,8 +107,42 @@ body[data-theme='dark'] {
   // }
 
   #portfolio {
-    background: var(--portfolio-background);
+    background: var(--jrcolor-mediumgreen);
     padding-bottom: 1rem;
+  }
+
+  .foto div {
+    background: var(--jrcolor-darkgray);
+    display: inline-block;
+    margin: 0 auto 5% auto;
+    padding: 10px 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px var(--jrcolor-black);
+    -moz-box-shadow: 0 4px 6px var(--jrcolor-black);
+    box-shadow: 0 4px 6px var(--jrcolor-black);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    z-index: 0;
+    position: relative;
+  }
+
+  .foto div:after {
+    content: attr(title);
+    position: relative;
+    top: 15px;
+  }
+
+  .foto div:hover {
+    -webkit-transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    transform: scale(1.01);
+    z-index: 10;
+    -webkit-box-shadow: 0 10px 20px var(--jrcolor-black);
+    -moz-box-shadow: 0 10px 20px var(--jrcolor-black);
+    box-shadow: 0 10px 20px var(--jrcolor-black);
+    cursor: pointer;
   }
 
   #skills {
@@ -139,8 +173,8 @@ body[data-theme='dark'] {
     background: var(--jrcolor-mediumgreen);
 
     .experience-badge {
-      background: var(--jrcolor-lightgray);
-      color: var(--jrcolor-bluelink);
+      background: var(--jrcolor-lightblue);
+      color: var(--jrcolor-black);
       padding: 0px 5px;
       margin: 2px 2px;
       border-radius: 1rem;
@@ -148,6 +182,11 @@ body[data-theme='dark'] {
 
     .main-badge {
       background: var(--jrcolor-darkyellow);
+    }
+
+    .vertical-timeline-element-content {
+      color: var(--jrcolor-lightblue);
+      background: var(--jrcolor-darkgray);
     }
 
     .vertical-timeline-element-date {
@@ -162,7 +201,7 @@ body[data-theme='dark'] {
       font-size: 1.8rem;
       color: var(--jrcolor-mediumyellow);
       margin-top: 1rem;
-      margin-left: 1rem;
+      margin-left: 0.7rem;
     }
   }
 
@@ -201,7 +240,7 @@ body[data-theme='dark'] {
   }
 
   .section-title {
-    color: var(--jrcolor-darkblue);
+    color: var(--jrcolor-lightblue);
     font-size: 2rem;
     font-weight: 700;
     padding-top: 8px;
