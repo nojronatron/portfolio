@@ -47,7 +47,7 @@ body[data-theme='dark'] {
       text-transform: uppercase;
       letter-spacing: 0.6rem;
       height: 54px;
-      background-color: var(--jrcolor-darkyellow);
+      background-color: var(--jrcolor-mediumyellow);
       z-index: 900;
     }
   }
@@ -194,10 +194,6 @@ body[data-theme='dark'] {
     :focus {
       color: var(--jrcolor-darkblue);
     }
-  }
-
-  .header-image {
-    border: 5px solid var(--jrcolor-lightyellow);
   }
 
   section {
