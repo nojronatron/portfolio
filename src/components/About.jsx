@@ -19,14 +19,13 @@ export default function About({ resumeBasicInfo, portfolioData }) {
       <article id='about'>
         <div className='card'>
           <div className='card-header'>
-            <h1>{sectionName}</h1>
+            <h1 className='section-title'>{sectionName}</h1>
           </div>
-          <div className='card-body text-justify '>
+          <div className='card-body'>
             <img
-              width='300px'
               src={profilepic}
               alt='Jon hiking near Mt.Rainier in Washington State, USA.'
-              className='col-md-4 float-md-end mb-3 ms-md-3 rounded-4 profile-pic'
+              className='rounded-4 profile-pic float-end'
             />
             {about}
           </div>
