@@ -12,6 +12,7 @@ export default function GetSharedData() {
       cache: false,
       success: function (data) {
         setData(data);
+        document.title = `${data.basic_info.name}`;
       },
       error: function (xhr, status, err) {
         console.error(err);

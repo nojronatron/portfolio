@@ -12,7 +12,6 @@ export default function GetResumeData() {
       cache: false,
       success: function (data) {
         setData(data);
-        document.title = `${data.basic_info.name}`;
       },
       error: function (xhr, status, err) {
         alert(err);
