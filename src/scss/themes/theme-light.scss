@@ -3,5 +3,227 @@
 body[data-theme='light'] {
   .slider-tab {
     background-color: var(--jrcolor-mediumyellow);
+    height: 25px;
+  }
+
+  .slider-image {
+    border: 5px solid var(--jrcolor-darkblue);
+  }
+
+  .link-href {
+    color: var(--jrcolor-darkgreen);
+  }
+
+  .project-date {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 15px 2px 15px;
+    position: relative;
+    z-index: -500;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--jrcolor-mediumgray);
+  }
+
+  .project-title-settings {
+    margin-top: 5%;
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--jrcolor-darkblue);
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+    background-color: var(--jrcolor-mediumyellow);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
+
+    .nav {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6rem;
+      height: 54px;
+      background-color: var(--jrcolor-yellow);
+      z-index: 900;
+    }
+  }
+
+  .header-image {
+    width: 26vw;
+    border-radius: 50%;
+    border: 5px solid var(--jrcolor-darkyellow);
+    margin: 1rem;
+  }
+
+  header h1 {
+    text-align: center;
+    font-weight: 600 !important;
+    color: var(--jrcolor-darkblue2);
+    width: 100%;
+  }
+
+  .header-sub-title {
+    color: var(--jrcolor-darkblue);
+    background-color: var(--jrcolor-lightgray);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: var(--jrcolor-darkblue) 1px dotted;
+    border-radius: 2rem;
+  }
+
+  .header-sub-titles {
+    width: 100%;
+  }
+
+  #about {
+    background: var(--jrcolor-darkgreen);
+    overflow: hidden;
+    padding: 2px;
+
+    :hover,
+    :active {
+      cursor: default;
+    }
+
+    h1 {
+      padding-top: 1em;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--jrcolor-black);
+      text-align: center;
+    }
+  }
+
+  #portfolio {
+    background: var(--jrcolor-mediumgreen);
+    padding-bottom: 1rem;
+  }
+
+  #skills {
+    background: var(--jrcolor-darkgray);
+    padding-bottom: 4px;
+  }
+
+  .skills-tile {
+    background-color: var(--jrcolor-black);
+    border-radius: 10px;
+    margin: 6px;
+
+    :hover,
+    :active {
+      cursor: default;
+    }
+
+    .skill-icon-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--jrcolor-lightgray);
+      margin: 0px 6px 6px 6px;
+    }
+
+    #resume {
+      background: var(--jrcolor-mediumgreen);
+    }
+
+    .experience-badge {
+      background: var(--jrcolor-lightgray);
+      color: var(--jrcolor-bluelink);
+      padding: 0px 5px;
+      margin: 2px 2px;
+      border-radius: 1rem;
+    }
+
+    .main-badge {
+      background: var(--jrcolor-lightgray);
+    }
+
+    .vertical-timeline-element-date {
+      color: var(--jrcolor-lightblue);
+    }
+
+    .vertical-timeline-element-icon {
+      background: var(--jrcolor-darkblue2);
+    }
+
+    .experience-icon {
+      font-size: 1.8rem;
+      color: var(--jrcolor-lightyellow);
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+  #portfolio {
+    background: var(--portfolio-background);
+    padding-bottom: 1rem;
+  }
+
+  section {
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
+  }
+
+  .section-title {
+    color: var(--jrcolor-yellow);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    background: transparent;
+  }
+
+  #foot {
+    background-color: var(--jrcolor-yellow);
+  }
+
+  .revision-text {
+    color: var(--jrcolor-darkblue);
+  }
+
+  .modal-inside .modal-content {
+    background-color: var(--jrcolor-lightgray);
+    color: var(--jrcolor-brown);
+  }
+
+  footer {
+    background-color: var(--footer-background);
+    min-height: 80px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  footer a {
+    :visited,
+    :hover,
+    :focus {
+      color: var(--jrcolor-darkblue);
+    }
+  }
+
+  .jr-software-logo {
+    width: 56px;
+    height: 56px;
+    margin: 15px;
+    border: 5px solid var(--jrcolor-darkyellow);
+    border-radius: 50%;
+
+    @media (max-width: 600px) {
+      width: 28px;
+      height: 28px;
+      margin: 7px;
+      border: 2px solid var(--jrcolor-darkyellow);
+    }
   }
 }

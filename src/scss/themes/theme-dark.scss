@@ -2,135 +2,235 @@
 
 body[data-theme='dark'] {
   .slider-tab {
-    background-color: #8c8c8c;
-  }
-
-  .title-styles {
-    color: white;
+    background-color: var(--jrcolor-mediumgray);
   }
 
   .slider-image {
-    border: 5px solid #8c8c8c;
-  }
-
-  .language {
-    background-color: #494949;
+    border: 5px solid var(--jrcolor-mediumgray);
   }
 
   .link-href {
-    color: white;
+    color: var(--jrcolor-lightblue);
   }
 
   .project-date {
-    background-color: #918e97;
-    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 15px 2px 15px;
+    position: relative;
+    z-index: -500;
+    border-radius: 0 0 5px 5px;
+    background-color: var(jrcolor-darkgray);
+    color: var(--jrcolor-lightblue);
+  }
+
+  .project-title-settings {
+    margin-top: 5%;
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--jrcolor-lightblue);
+    text-align: center;
   }
 
   header {
-    background-color: #a59753;
+    text-align: center;
+    background-color: var(--jrcolor-darkyellow);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
 
-    h1 {
-      color: white;
+    .nav {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6rem;
+      height: 54px;
+      background-color: var(--jrcolor-darkyellow);
+      z-index: 900;
     }
-    .title-container {
-      color: white;
-    }
+  }
+
+  .header-image {
+    width: 26vw;
+    border-radius: 50%;
+    border: 5px solid var(--jrcolor-darkyellow);
+    margin: 1rem;
+  }
+
+  header h1 {
+    text-align: center;
+    font-weight: 600 !important;
+    color: var(--jrcolor-black);
+    width: 100%;
+  }
+
+  .header-sub-title {
+    color: var(--jrcolor-black);
+    background-color: var(--jrcolor-mediumgray);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: var(--jrcolor-darkblue) 1px dotted;
+    border-radius: 2rem;
+  }
+
+  .header-sub-titles {
+    width: 100%;
   }
 
   #about {
-    background-color: #7f7f7f;
-    h1 span {
-      color: white;
-    }
-    .polaroid span {
-      background: #6d6d6d;
-    }
-    .card {
-      background: #6d6d6d;
-      color: white;
+    background: var(--jrcolor-darkgreen);
+    overflow: hidden;
+    padding: 2px;
+
+    :hover,
+    :active {
+      cursor: default;
     }
 
-    .card-header {
-      background: #464646;
-      h1 {
-        color: white;
-      }
-    }
-
-    .profile-pic {
-      box-shadow: 8px 10px 5px 0px #a59753;
+    h1 {
+      padding-top: 1em;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--jrcolor-black);
+      text-align: center;
     }
   }
 
-  .themed-boxshadow {
-    box-shadow: '8px 10px 5px 0px #a59753';
-  }
+  // .themed-boxshadow {
+  //   box-shadow: 8px 10px 5px 0px var(--jrcolor-mediumyellow);
+  // }
 
   #portfolio {
-    background: #5b5b5b;
-    .section-title {
-      color: white !important;
+    background: var(--portfolio-background);
+    padding-bottom: 1rem;
+  }
+
+  #skills {
+    background: var(--jrcolor-darkgray);
+    padding-bottom: 4px;
+  }
+
+  .skills-tile {
+    background-color: var(--jrcolor-black);
+    border-radius: 10px;
+    margin: 6px;
+
+    :hover,
+    :active {
+      cursor: default;
     }
-    .foto div {
-      background: #6d6d6d;
-    }
-    .project-title-settings {
-      color: white;
-    }
+  }
+
+  .skill-icon-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--jrcolor-white);
+    margin: 0px 6px 6px 6px;
   }
 
   #resume {
-    filter: brightness(80%);
-    background: var(--jrcolor-darkgray);
-    .section-title {
-      color: var(--jrcolor-lightblue);
-    }
+    // filter: brightness(80%);
+    background: var(--jrcolor-mediumgreen);
 
     .experience-badge {
-      background: var(--jrcolor-mediumgray);
-      color: var(--jrcolor-lightblue);
+      background: var(--jrcolor-lightgray);
+      color: var(--jrcolor-bluelink);
+      padding: 0px 5px;
+      margin: 2px 2px;
+      border-radius: 1rem;
     }
 
     .main-badge {
-      background: var(--jrcolor-mediumgray);
+      background: var(--jrcolor-darkyellow);
     }
 
     .vertical-timeline-element-date {
-      color: var(--jrcolor-lightblue);
+      color: var(--jrcolor-white);
     }
 
     .vertical-timeline-element-icon {
-      background: var(--jrcolor-mediumgray);
+      background: var(--jrcolor-darkblue2);
     }
-    @media only screen and (max-width: 1169px) {
-      .vertical-timeline-element-date {
-        color: var(--jrcolor-black);
-      }
+
+    .experience-icon {
+      font-size: 1.8rem;
+      color: var(--jrcolor-mediumyellow);
+      margin-top: 1rem;
+      margin-left: 1rem;
     }
   }
 
   #foot {
-    background-color: #494949;
+    background-color: var(--jrcolor-darkyellow);
   }
 
   .revision-text {
-    color: white;
-    font-size: 2em;
-    padding-right: 4px;
+    color: var(--jrcolor-lightblue);
   }
 
   .modal-inside .modal-content {
-    background: #5b5b5b;
-    color: white;
+    background-color: var(--jrcolor-darkgray);
+    color: var(--jrcolor-lightblue);
   }
 
-  .close-icon {
-    color: white;
+  footer {
+    background-color: var(--footer-background);
+    min-height: 80px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  footer a {
+    :visited,
+    :hover,
+    :focus {
+      color: var(--jrcolor-darkblue);
+    }
   }
 
   .header-image {
-    width: 350px;
+    border: 5px solid var(--jrcolor-lightyellow);
+  }
+
+  section {
+    border-bottom: var(--jrcolor-black) 2px solid;
+  }
+
+  .section-title {
+    color: var(--jrcolor-darkblue);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    background: transparent;
+  }
+
+  .jr-software-logo {
+    width: 56px;
+    height: 56px;
+    margin: 15px;
+    border: 5px solid var(--jrcolor-darkyellow);
     border-radius: 50%;
-    border: 5px solid #eee2bd;
+    -webkit-box-shadow: 0px 4px 6px var(--jrcolor-black);
+    -moz-box-shadow: 0px 4px 6px var(--jrcolor-black);
+    box-shadow: 0px 4px 6px var(--jrcolor-black);
+
+    @media (max-width: 600px) {
+      width: 28px;
+      height: 28px;
+      margin: 7px;
+      border: 2px solid var(--jrcolor-darkyellow);
+    }
   }
 }
