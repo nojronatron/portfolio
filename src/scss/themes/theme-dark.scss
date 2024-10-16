@@ -14,22 +14,12 @@ body[data-theme='dark'] {
   }
 
   .project-date {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 8px 15px 2px 15px;
-    position: relative;
-    z-index: -500;
-    border-radius: 0 0 5px 5px;
     background-color: var(jrcolor-darkgray);
     color: var(--jrcolor-lightblue);
   }
 
   .project-title-settings {
-    margin-top: 5%;
-    font: 18px/24px 'opensans-bold', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 3px;
     color: var(--jrcolor-lightblue);
-    text-align: center;
   }
 
   header {
@@ -53,58 +43,28 @@ body[data-theme='dark'] {
   }
 
   .header-image {
-    width: 26vw;
+    border: 5px solid var(--jrcolor-darkgray);
     border-radius: 50%;
-    border: 5px solid var(--jrcolor-darkyellow);
-    margin: 1rem;
   }
 
   header h1 {
-    text-align: center;
-    font-weight: 600 !important;
     color: var(--jrcolor-black);
-    width: 100%;
   }
 
   .header-sub-title {
     color: var(--jrcolor-black);
     background-color: var(--jrcolor-mediumgray);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding-left: 1rem;
-    padding-right: 1rem;
     border: var(--jrcolor-darkblue) 1px dotted;
     border-radius: 2rem;
   }
 
-  .header-sub-titles {
-    width: 100%;
-  }
-
   #about {
     background: var(--jrcolor-darkgreen);
-    overflow: hidden;
-    padding: 2px;
-
-    :hover,
-    :active {
-      cursor: default;
-    }
 
     h1 {
-      padding-top: 1em;
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 3px;
       color: var(--jrcolor-black);
-      text-align: center;
     }
   }
-
-  // .themed-boxshadow {
-  //   box-shadow: 8px 10px 5px 0px var(--jrcolor-mediumyellow);
-  // }
 
   #portfolio {
     background: var(--jrcolor-mediumgreen);
@@ -113,36 +73,21 @@ body[data-theme='dark'] {
 
   .foto div {
     background: var(--jrcolor-darkgray);
-    display: inline-block;
-    margin: 0 auto 5% auto;
-    padding: 10px 10px 5px;
-    text-align: center;
-    text-decoration: none;
     -webkit-box-shadow: 0 4px 6px var(--jrcolor-black);
     -moz-box-shadow: 0 4px 6px var(--jrcolor-black);
     box-shadow: 0 4px 6px var(--jrcolor-black);
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-    z-index: 0;
-    position: relative;
-  }
 
-  .foto div:after {
-    content: attr(title);
-    position: relative;
-    top: 15px;
+    @media (max-width: 600px) {
+      -webkit-box-shadow: 0 2px 4px var(--jrcolor-black);
+      -moz-box-shadow: 0 2px 4px var(--jrcolor-black);
+      box-shadow: 0 2px 4px var(--jrcolor-black);
+    }
   }
 
   .foto div:hover {
-    -webkit-transform: scale(1.01);
-    -moz-transform: scale(1.01);
-    transform: scale(1.01);
-    z-index: 10;
     -webkit-box-shadow: 0 10px 20px var(--jrcolor-black);
     -moz-box-shadow: 0 10px 20px var(--jrcolor-black);
     box-shadow: 0 10px 20px var(--jrcolor-black);
-    cursor: pointer;
   }
 
   #skills {
@@ -206,7 +151,7 @@ body[data-theme='dark'] {
   }
 
   #foot {
-    background-color: var(--jrcolor-darkyellow);
+    background-color: var(--jrcolor-mediumyellow);
   }
 
   .revision-text {
@@ -218,43 +163,15 @@ body[data-theme='dark'] {
     color: var(--jrcolor-lightblue);
   }
 
-  footer {
-    background-color: var(--footer-background);
-    min-height: 80px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-  footer a {
-    :visited,
-    :hover,
-    :focus {
-      color: var(--jrcolor-darkblue);
-    }
-  }
-
   section {
     border-bottom: var(--jrcolor-black) 2px solid;
   }
 
   .section-title {
     color: var(--jrcolor-lightblue);
-    font-size: 2rem;
-    font-weight: 700;
-    padding-top: 8px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    text-align: center;
-    background: transparent;
   }
 
   .jr-software-logo {
-    width: 56px;
-    height: 56px;
-    margin: 15px;
     border: 5px solid var(--jrcolor-darkyellow);
     border-radius: 50%;
     -webkit-box-shadow: 0px 4px 6px var(--jrcolor-black);
@@ -262,10 +179,10 @@ body[data-theme='dark'] {
     box-shadow: 0px 4px 6px var(--jrcolor-black);
 
     @media (max-width: 600px) {
-      width: 28px;
-      height: 28px;
-      margin: 7px;
       border: 2px solid var(--jrcolor-darkyellow);
+      -webkit-box-shadow: 0px 2px 3px var(--jrcolor-black);
+      -moz-box-shadow: 0px 2px 3px var(--jrcolor-black);
+      box-shadow: 0px 2px 3px var(--jrcolor-black);
     }
   }
 }

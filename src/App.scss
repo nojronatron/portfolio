@@ -21,7 +21,60 @@ html {
 }
 
 .mouse-arrow-only {
-  margin-top: 42px;
+  margin-top: 52px;
+  cursor: default;
+}
+
+header {
+  text-align: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+
+  .nav {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    height: 52px;
+    z-index: 900;
+  }
+}
+
+.header-image {
+  width: 26vw;
+  margin: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 600 !important;
+  width: 100%;
+}
+
+.header-sub-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 2px;
+}
+
+.header-sub-titles {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  background: transparent;
   cursor: default;
 }
 
@@ -61,6 +114,7 @@ header :link {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
+
 .slider-iconify {
   margin: 3px;
 }
@@ -68,6 +122,33 @@ header :link {
 .foto img {
   display: block;
   width: 100%;
+}
+
+.foto div {
+  display: inline-block;
+  margin: 0 auto 5% auto;
+  padding: 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+
+.foto div:after {
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+
+.foto div:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  transform: scale(1.01);
+  z-index: 10;
+  cursor: pointer;
 }
 
 .profile-pic {
@@ -81,6 +162,24 @@ header :link {
 @media only screen and (max-width: 1170px) {
   .experience-icon {
     margin-top: 27%;
+    text-align: center;
+  }
+}
+
+#about {
+  overflow: hidden;
+  padding: 2px;
+
+  :hover,
+  :active {
+    cursor: default;
+  }
+
+  h1 {
+    padding-top: 1em;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
     text-align: center;
   }
 }
@@ -105,6 +204,22 @@ header :link {
 .portfolio-item {
   max-width: 100%;
   margin-bottom: 15px;
+  text-align: center;
+}
+
+.project-date {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8px 15px 2px 15px;
+  position: relative;
+  z-index: -500;
+  border-radius: 0 0 5px 5px;
+}
+
+.project-title-settings {
+  margin-top: 5%;
+  font: 18px/24px 'opensans-bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   text-align: center;
 }
 
@@ -146,6 +261,22 @@ header :link {
   }
 }
 
+footer {
+  min-height: 80px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer a {
+  :visited,
+  :hover,
+  :focus {
+    color: var(--jrcolor-darkblue);
+  }
+}
+
 .revision-text {
   font-size: 2em;
   padding-right: 4px;
@@ -167,5 +298,17 @@ header :link {
   :focus,
   :hover {
     cursor: default;
+  }
+}
+
+.jr-software-logo {
+  width: 56px;
+  height: 56px;
+  margin: 15px;
+
+  @media (max-width: 600px) {
+    width: 28px;
+    height: 28px;
+    margin: 7px;
   }
 }
