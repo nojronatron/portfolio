@@ -29,13 +29,10 @@ export default function Experience({ resumeExperience, resumeBasicInfo }) {
         );
       });
 
+      var workIcon = <div className={`${work.icon} experience-icon`}></div>;
+
       return (
-        <VerticalTimelineElement
-          className='vertical-timeline-element--work'
-          date={work.years}
-          icon={<div className='fab fa-angular experience-icon'></div>}
-          key={idx}
-        >
+        <VerticalTimelineElement date={work.years} icon={workIcon} key={idx}>
           <div className='d-flex justify-content-start flex-wrap'>
             {mainTech}
           </div>
