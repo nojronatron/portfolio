@@ -59,10 +59,19 @@ body[data-theme='dark'] {
   }
 
   #about {
-    background: var(--jrcolor-darkgreen);
+    background: var(--jrcolor-brown);
 
     h1 {
-      color: var(--jrcolor-black);
+      padding: 0px;
+    }
+
+    .card {
+      background-color: var(--jrcolor-darkgray);
+    }
+
+    .card-header,
+    .card-footer {
+      background-color: var(--jrcolor-darkgreen);
     }
   }
 
@@ -88,6 +97,17 @@ body[data-theme='dark'] {
     -webkit-box-shadow: 0 10px 20px var(--jrcolor-black);
     -moz-box-shadow: 0 10px 20px var(--jrcolor-black);
     box-shadow: 0 10px 20px var(--jrcolor-black);
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    box-shadow: 8px 10px 5px 0px var(--jrcolor-darkyellow);
+
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   #skills {
