@@ -220,6 +220,7 @@
     {
       "company": "Destination Trail",
       "title": "HAM Team Lead Volunteer",
+      "icon": "fas fa-hands-helping",
       "years": "2016 - 2024",
       "mainTech": ["Software", "Communications", "Team Lead", "Planning"],
       "technologies": [
@@ -235,6 +236,7 @@
     {
       "company": "National Multiple Sclerosis Society",
       "title": "Supplies and Gear HAM",
+      "icon": "fas fa-hands-helping",
       "years": "2013 - 2024",
       "mainTech": ["Communications Infra", "Safety", "Support", "Planning"],
       "technologies": [
@@ -250,6 +252,7 @@
     {
       "company": "Various Organizations",
       "title": "Radio Comms and Logistics Volunteer",
+      "icon": "fas fa-hands-helping",
       "years": "2013 - 2024",
       "mainTech": ["Logistics", "Communications", "Safety", "Support"],
       "technologies": [
@@ -263,6 +266,7 @@
     {
       "company": "Citrix Systems, Inc",
       "title": "Software Test Engineer II",
+      "icon": "fas fa-laptop-code",
       "years": "April 2014 - July 2017",
       "mainTech": ["Tests", "Planning", "Reporting", "Bugs", "Domain Admin"],
       "technologies": [
@@ -279,6 +283,7 @@
     {
       "company": "Citrix Systems, Inc",
       "title": "Engineering Sys Admin II",
+      "icon": "fas fa-laptop-code",
       "years": "2006 - 2014",
       "mainTech": ["Manage Lab", "LAN Admin", "Active Directory Admin"],
       "technologies": [
@@ -294,6 +299,7 @@
     {
       "company": "Citrix Systems, Inc",
       "title": "Computer Lab Tech",
+      "icon": "fas fa-network-wired",
       "years": "2004 - 2006",
       "mainTech": ["Build, Maintain PCs", "Maintain Lab", "Manage LAN"],
       "technologies": [
@@ -308,6 +314,7 @@
     {
       "company": "Cascadia College",
       "title": "Helpdesk Support",
+      "icon": "fas fa-briefcase",
       "years": "2003, 2004",
       "mainTech": ["Staff, Student Tech Spprt", "IT generalist"],
       "technologies": [
