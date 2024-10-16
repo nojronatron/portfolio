@@ -2,107 +2,207 @@
 
 body[data-theme='dark'] {
   .slider-tab {
-    background-color: #8c8c8c;
-  }
-
-  .title-styles {
-    color: white;
+    background-color: var(--jrcolor-mediumgray);
   }
 
   .slider-image {
-    border: 5px solid #8c8c8c;
-  }
-
-  .language {
-    background-color: #494949;
+    border: 5px solid var(--jrcolor-mediumgray);
   }
 
   .link-href {
-    color: white;
+    color: var(--jrcolor-lightblue);
   }
 
   .project-date {
-    background-color: #918e97;
-    color: white;
+    background-color: var(jrcolor-darkgray);
+    color: var(--jrcolor-lightblue);
+  }
+
+  .project-title-settings {
+    color: var(--jrcolor-lightblue);
   }
 
   header {
-    background-color: #494949;
-    h1 {
-      color: white;
+    text-align: center;
+    background-color: var(--jrcolor-darkyellow);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
+
+    .nav {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6rem;
+      height: 54px;
+      background-color: var(--jrcolor-mediumyellow);
+      z-index: 900;
     }
-    .title-container {
-      color: white;
-    }
+  }
+
+  .header-image {
+    border: 5px solid var(--jrcolor-darkgray);
+    border-radius: 50%;
+  }
+
+  header h1 {
+    color: var(--jrcolor-black);
+  }
+
+  .header-sub-title {
+    color: var(--jrcolor-black);
+    background-color: var(--jrcolor-mediumgray);
+    border: var(--jrcolor-darkblue) 1px dotted;
+    border-radius: 2rem;
   }
 
   #about {
-    background-color: #7f7f7f;
-    h1 span {
-      color: white;
-    }
-    .polaroid span {
-      background: #6d6d6d;
-    }
-    .card {
-      background: #6d6d6d;
-      color: white;
-    }
-  }
+    background: var(--jrcolor-brown);
 
-  .themed-boxshadow {
-    box-shadow: '8px 10px 5px 0px #a59753';
+    h1 {
+      padding: 0px;
+    }
+
+    .card {
+      background-color: var(--jrcolor-darkgray);
+    }
+
+    .card-header,
+    .card-footer {
+      background-color: var(--jrcolor-darkgreen);
+    }
   }
 
   #portfolio {
-    background: #5b5b5b;
-    .section-title {
-      color: white !important;
+    background: var(--jrcolor-mediumgreen);
+    padding-bottom: 1rem;
+  }
+
+  .foto div {
+    background: var(--jrcolor-darkgray);
+    -webkit-box-shadow: 0 4px 6px var(--jrcolor-black);
+    -moz-box-shadow: 0 4px 6px var(--jrcolor-black);
+    box-shadow: 0 4px 6px var(--jrcolor-black);
+
+    @media (max-width: 600px) {
+      -webkit-box-shadow: 0 2px 4px var(--jrcolor-black);
+      -moz-box-shadow: 0 2px 4px var(--jrcolor-black);
+      box-shadow: 0 2px 4px var(--jrcolor-black);
     }
-    .foto div {
-      background: #6d6d6d;
+  }
+
+  .foto div:hover {
+    -webkit-box-shadow: 0 10px 20px var(--jrcolor-black);
+    -moz-box-shadow: 0 10px 20px var(--jrcolor-black);
+    box-shadow: 0 10px 20px var(--jrcolor-black);
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    box-shadow: 8px 10px 5px 0px var(--jrcolor-darkyellow);
+
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 150px;
     }
-    .project-title-settings {
-      color: white;
+  }
+
+  #skills {
+    background: var(--jrcolor-darkgray);
+    padding-bottom: 4px;
+  }
+
+  .skills-tile {
+    background-color: var(--jrcolor-black);
+    border-radius: 10px;
+    margin: 6px;
+
+    :hover,
+    :active {
+      cursor: default;
     }
+  }
+
+  .skill-icon-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--jrcolor-white);
+    margin: 0px 6px 6px 6px;
   }
 
   #resume {
-    filter: brightness(80%);
-    background: #5b5b5b;
-    .section-title {
-      color: white !important;
-    }
+    // filter: brightness(80%);
+    background: var(--jrcolor-mediumgreen);
 
     .experience-badge {
-      background: #919191 !important;
-      color: white;
+      background: var(--jrcolor-lightblue);
+      color: var(--jrcolor-black);
+      padding: 0px 5px;
+      margin: 2px 2px;
+      border-radius: 1rem;
     }
 
     .main-badge {
-      background: #919191 !important;
+      background: var(--jrcolor-darkyellow);
+    }
+
+    .vertical-timeline-element-content {
+      color: var(--jrcolor-lightblue);
+      background: var(--jrcolor-darkgray);
     }
 
     .vertical-timeline-element-date {
-      color: white;
+      color: var(--jrcolor-white);
     }
 
     .vertical-timeline-element-icon {
-      background: #919191 !important;
+      background: var(--jrcolor-darkblue2);
     }
-    @media only screen and (max-width: 1169px) {
-      .vertical-timeline-element-date {
-        color: black;
-      }
+
+    .experience-icon {
+      font-size: 1.8rem;
+      color: var(--jrcolor-mediumyellow);
+      margin-top: 1rem;
+      margin-left: 0.7rem;
     }
+  }
+
+  #foot {
+    background-color: var(--jrcolor-mediumyellow);
+  }
+
+  .revision-text {
+    color: var(--jrcolor-lightblue);
   }
 
   .modal-inside .modal-content {
-    background: #5b5b5b;
-    color: white;
+    background-color: var(--jrcolor-darkgray);
+    color: var(--jrcolor-lightblue);
   }
 
-  .close-icon {
-    color: white;
+  section {
+    border-bottom: var(--jrcolor-black) 2px solid;
+  }
+
+  .section-title {
+    color: var(--jrcolor-lightblue);
+  }
+
+  .jr-software-logo {
+    border: 5px solid var(--jrcolor-darkyellow);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 4px 6px var(--jrcolor-black);
+    -moz-box-shadow: 0px 4px 6px var(--jrcolor-black);
+    box-shadow: 0px 4px 6px var(--jrcolor-black);
+
+    @media (max-width: 600px) {
+      border: 2px solid var(--jrcolor-darkyellow);
+      -webkit-box-shadow: 0px 2px 3px var(--jrcolor-black);
+      -moz-box-shadow: 0px 2px 3px var(--jrcolor-black);
+      box-shadow: 0px 2px 3px var(--jrcolor-black);
+    }
   }
 }

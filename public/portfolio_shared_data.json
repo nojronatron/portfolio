@@ -2,22 +2,22 @@
   "basic_info": {
     "name": "Jon Rumsey",
     "titles": [
-      "Software Developer | ",
-      "Software Test Engineer | ",
-      "Systems Administrator | ",
-      "Ham Radio Enthusiast | ",
+      "Software Developer",
+      "Software Test Engineer",
+      "Systems Administrator",
+      "Ham Radio Enthusiast",
       "Community Volunteer"
     ],
     "social": [
       {
         "name": "github",
         "url": "https://github.com/nojronatron",
-        "class": "fab fa-github"
+        "class": "devicon:github-wordmark"
       },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/jonathan-rumsey-wa",
-        "class": "fab fa-linkedin"
+        "class": "devicon:linkedin"
       }
     ],
     "image": "jon-rainier-400x400.jpg"
@@ -26,29 +26,33 @@
     "codingLanguages": [
       {
         "name": "HTML 5",
-        "icon": "devicon-html5"
+        "icon": "devicon:html5"
       },
       {
         "name": "CSS 3",
-        "icon": "devicon-css3"
+        "icon": "devicon:css3"
       },
       {
         "name": "JavaScript",
-        "icon": "devicon-javascript"
+        "icon": "skill-icons:javascript"
       },
       {
         "name": "Java",
-        "icon": "devicon-java"
+        "icon": "skill-icons:java-light"
       },
       {
-        "name": "C#",
-        "icon": "vscode-icons:file-type-csharp"
+        "name": "C Sharp",
+        "icon": "vscode-icons:file-type-csharp2"
+      },
+      {
+        "name": "Powershell",
+        "icon": "skill-icons:powershell-light"
       }
     ],
     "tools": [
       {
         "name": "Git",
-        "icon": "devicon-git"
+        "icon": "skill-icons:git"
       },
       {
         "name": "VS Code",
@@ -56,7 +60,7 @@
       },
       {
         "name": "IDEA",
-        "icon": "devicon:intellij"
+        "icon": "skill-icons:idea-light"
       },
       {
         "name": "Visual Studio",
@@ -64,27 +68,35 @@
       },
       {
         "name": "React",
-        "icon": "devicon:react"
+        "icon": "skill-icons:react-light"
       },
       {
         "name": "Node.js",
-        "icon": "devicon:nodejs"
+        "icon": "skill-icons:nodejs-light"
       },
       {
         "name": "Trello",
-        "icon": "bi:trello"
+        "icon": "devicon:trello"
       },
       {
         "name": "Netlify",
-        "icon": "logos:netlify-icon"
+        "icon": "devicon:netlify"
       },
       {
         "name": "Azure",
-        "icon": "devicon:azure"
+        "icon": "skill-icons:azure-light"
       },
       {
-        "name": "MS SQL",
-        "icon": "ph:file-sql"
+        "name": "SQL",
+        "icon": "vscode-icons:file-type-sql"
+      },
+      {
+        "name": "JSON",
+        "icon": "mdi:code-json"
+      },
+      {
+        "name": "NoSQL",
+        "icon": "mdi:code-json"
       }
     ]
   }

@@ -1,6 +1,6 @@
 # Jon's Portfolio Site #
 
-This site began as a lab assignment while attending Code Fellows in Seattle, WA. It is now a handy storage space to showcase my projects, interests, and experiences.
+This site began as a lab assignment while attending Code Fellows in Seattle, WA. It is now a handy space to showcase my projects and experiences, and to experiment with various web-design concepts and tools.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/79c5e328-bd0c-4214-840d-89c6e19b230f/deploy-status)](https://app.netlify.com/sites/portfolio-jon-rumsey/deploys)
 
@@ -13,11 +13,16 @@ This site began as a lab assignment while attending Code Fellows in Seattle, WA.
 
 ## Current Version ##
 
-[Unreleased] - TBD
+[v1.0.0] - 16-October-2024
 
 - Add recent projects.
+- Apply custom color palette.
 - Refactor styling to improve accessibility.
-- Refactor layout and style for a more responsive design.
+- Convert icons to Iconify
+- Update data-fetching to support other (future) data source(s).
+- Refactor layout and style for responsive design supporting large screens (desktops) and smart phone.
+- Fix various implementation issues (probably caused by me) in the vertical timeline, switch, and other imported components.
+- Convert class-based components to functional components and implement React Hooks instead.
 
 [v0.3.0] - 2-October-2024
 
@@ -40,3 +45,9 @@ The starter code for this project was cloned from project [Dorota1997/react-fron
 ## Contributors ##
 
 Content Creator, UX and Accessibility Design, JS/React Developer, Test Engineer, and DevOps Engineer: Jon Rumsey [nojronatron](https://github.com/nojronatron).
+
+This site uses [Iconify-React](https://iconify.design/) for some language and tools icons.
+
+This site also uses free versions of [FontAwesome v.5 Icons](https://fontawesome.com/v5/search)
+
+Dev Icons ~~are~~ were courtesy of [Devicon.dev](https://devicon.dev) (thanks, it was fun while it lasted).

@@ -1,0 +1,29 @@
+:root {
+  --jrcolor-white: rgb(250, 250, 250);
+
+  --jrcolor-lightblue: rgb(205, 241, 255);
+  --jrcolor-brightblue: rgb(190, 250, 255); //#3efbff;
+  --jrcolor-bluelink: rgb(0, 0, 255); // hyperlink default color
+  --jrcolor-darkblue: rgb(65, 75, 178);
+  --jrcolor-darkblue2: rgb(0, 0, 144); // #000090;
+
+  --jrcolor-lightyellow: rgb(255, 249, 195); //#ffefc3;
+  --jrcolor-yellow: rgb(255, 218, 70);
+  --jrcolor-mediumyellow: rgb(162, 138, 44); // #a28a2c;
+  --jrcolor-darkyellow: rgb(93, 80, 26); // #5d501a;
+  --jrcolor-brown: rgb(106, 91, 39); // #6a5b27;
+
+  --jrcolor-brightgreen: rgb(0, 221, 0); // #00dd00;
+  --jrcolor-lightgreen: rgb(0, 170, 0); // #00aa00;
+  --jrcolor-mediumgreen: rgb(0, 102, 0); // #006600;
+  --jrcolor-darkgreen: rgb(0, 100, 0);
+
+  --jrcolor-lightgray: rgb(240, 240, 240);
+  --jrcolor-mediumgray: rgb(200, 200, 200);
+  --jrcolor-darkgray: rgb(100, 100, 100);
+  --jrcolor-black: rgb(20, 20, 20); // #141414
+
+  --slidertab-background: var(--jrcolor-mediumgray);
+  --footer-background: var(--jrcolor-yellow);
+  --nav-background: var(--jrcolor-yellow);
+}

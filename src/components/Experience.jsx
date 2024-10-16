@@ -1,102 +1,60 @@
-import { Component } from 'react';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import Badge from 'react-bootstrap/Badge';
 import PropTypes from 'prop-types';
 
-class Experience extends Component {
-  static propTypes = {
-    resumeExperience: PropTypes.array,
-    resumeBasicInfo: PropTypes.object,
-  };
+export default function Experience({ resumeExperience, resumeBasicInfo }) {
+  if (resumeExperience && resumeBasicInfo) {
+    var sectionName = resumeBasicInfo.section_name.experience;
 
-  render() {
-    if (this.props.resumeExperience && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.experience;
-      var work = this.props.resumeExperience.map(function (work, i) {
-        const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
+    var work = resumeExperience.map(function (work, idx) {
+      const technologies = work.technologies;
+      const mainTechnologies = work.mainTech;
 
-        var mainTech = mainTechnologies.map((technology, i) => {
-          return (
-            <Badge pill className='main-badge mr-2 mb-2' key={i}>
-              {technology}
-            </Badge>
-          );
-        });
-        var tech = technologies.map((technology, i) => {
-          return (
-            <Badge pill className='experience-badge mr-2 mb-2' key={i}>
-              {technology}
-            </Badge>
-          );
-        });
+      var mainTech = mainTechnologies.map((technology, jdx) => {
         return (
-          <VerticalTimelineElement
-            className='vertical-timeline-element--work'
-            date={work.years}
-            iconStyle={{
-              background: '#AE944F',
-              color: '#fff',
-              textAlign: 'center',
-            }}
-            icon={<i className='fab fa-angular experience-icon'></i>}
-            key={i}
-          >
-            <div style={{ textAlign: 'left', marginBottom: '4px' }}>
-              {mainTech}
-            </div>
-
-            <h3
-              className='vertical-timeline-element-title'
-              style={{ textAlign: 'left' }}
-            >
-              {work.title}
-            </h3>
-            <h4
-              className='vertical-timeline-element-subtitle'
-              style={{ textAlign: 'left' }}
-            >
-              {work.company}
-            </h4>
-            <div style={{ textAlign: 'left', marginTop: '15px' }}>{tech}</div>
-          </VerticalTimelineElement>
+          <div key={jdx} className='experience-badge'>
+            {technology}
+          </div>
         );
       });
-    }
 
-    return (
-      <section id='resume' className='pb-5'>
-        <div className='col-md-12 mx-auto'>
-          <div className='col-md-12'>
-            <h1 className='section-title' style={{ color: 'black' }}>
-              <span className='text-black' style={{ textAlign: 'center' }}>
-                {sectionName}
-              </span>
-            </h1>
+      var tech = technologies.map((technology, kdx) => {
+        return (
+          <div key={kdx} className='experience-badge'>
+            {technology}
           </div>
-        </div>
-        <div className='col-md-8 mx-auto'>
-          <VerticalTimeline>
-            {work}
-            <VerticalTimelineElement
-              iconStyle={{
-                background: '#AE944F',
-                color: '#fff',
-                textAlign: 'center',
-              }}
-              icon={
-                <i className='fas fa-hourglass-start mx-auto experience-icon'></i>
-              }
-            />
-          </VerticalTimeline>
-        </div>
-      </section>
-    );
+        );
+      });
+
+      var workIcon = <div className={`${work.icon} experience-icon`}></div>;
+
+      return (
+        <VerticalTimelineElement date={work.years} icon={workIcon} key={idx}>
+          <div className='d-flex justify-content-start flex-wrap'>
+            {mainTech}
+          </div>
+          <h3>{work.title}</h3>
+          <h4>{work.company}</h4>
+          <div className='d-flex justify-content-start flex-wrap'>{tech}</div>
+        </VerticalTimelineElement>
+      );
+    });
   }
+
+  return (
+    <section id='resume'>
+      <h1 className='section-title'>{sectionName}</h1>
+      <VerticalTimeline>
+        <div className='work-experience'>{work}</div>
+      </VerticalTimeline>
+    </section>
+  );
 }
 
-export default Experience;
+Experience.propTypes = {
+  resumeExperience: PropTypes.array,
+  resumeBasicInfo: PropTypes.object,
+};

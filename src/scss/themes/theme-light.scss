@@ -2,6 +2,198 @@
 
 body[data-theme='light'] {
   .slider-tab {
-    background-color: #d7caaa;
+    background-color: var(--jrcolor-mediumyellow);
+    height: 25px;
+  }
+
+  .slider-image {
+    border: 5px solid var(--jrcolor-darkblue);
+  }
+
+  .link-href {
+    color: var(--jrcolor-darkgreen);
+  }
+
+  .project-date {
+    background-color: var(--jrcolor-mediumgray);
+  }
+
+  .project-title-settings {
+    color: var(--jrcolor-darkblue);
+  }
+
+  header {
+    background-color: var(--jrcolor-mediumyellow);
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
+
+    .nav {
+      background-color: var(--jrcolor-yellow);
+    }
+  }
+
+  .header-image {
+    border: 5px solid var(--jrcolor-darkyellow);
+    border-radius: 50%;
+  }
+
+  header h1 {
+    color: var(--jrcolor-darkblue2);
+  }
+
+  .header-sub-title {
+    color: var(--jrcolor-darkblue);
+    background-color: var(--jrcolor-lightgray);
+    border: var(--jrcolor-darkblue) 1px dotted;
+    border-radius: 2rem;
+  }
+
+  #about {
+    background: var(--jrcolor-darkgreen);
+
+    h1 {
+      padding: 0px;
+    }
+
+    .card {
+      background-color: var(--jrcolor-mediumgray);
+    }
+
+    .card-header {
+      background-color: var(--jrcolor-lightgreen);
+    }
+
+    .card-footer {
+      background-color: var(--jrcolor-darkgray);
+    }
+  }
+
+  #portfolio {
+    background: var(--jrcolor-mediumgreen);
+    padding-bottom: 1rem;
+  }
+
+  #skills {
+    background: var(--jrcolor-darkgray);
+    padding-bottom: 4px;
+  }
+
+  .skills-tile {
+    background-color: var(--jrcolor-black);
+    border-radius: 10px;
+    margin: 6px;
+
+    :hover,
+    :active {
+      cursor: default;
+    }
+  }
+
+  .skill-icon-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--jrcolor-lightgray);
+    margin: 0px 6px 6px 6px;
+  }
+
+  #resume {
+    background: var(--jrcolor-lightgreen);
+
+    .experience-badge {
+      background: var(--jrcolor-lightgray);
+      color: var(--jrcolor-bluelink);
+      padding: 0px 5px;
+      margin: 2px 2px;
+      border-radius: 1rem;
+    }
+
+    .main-badge {
+      background: var(--jrcolor-lightgray);
+    }
+
+    .vertical-timeline-element-date {
+      color: var(--jrcolor-lightblue);
+    }
+
+    .vertical-timeline-element-icon {
+      background: var(--jrcolor-darkblue2);
+    }
+
+    .experience-icon {
+      font-size: 1.8rem;
+      color: var(--jrcolor-lightyellow);
+      margin-top: 1rem;
+      margin-left: 0.7rem;
+    }
+  }
+
+  #portfolio {
+    background: var(--jrcolor-lightgreen);
+    padding-bottom: 1rem;
+  }
+
+  .foto div {
+    background: var(--jrcolor-lightgray);
+    -webkit-box-shadow: 0 4px 6px var(--jrcolor-black);
+    -moz-box-shadow: 0 4px 6px var(--jrcolor-black);
+    box-shadow: 0 4px 6px var(--jrcolor-black);
+
+    @media (max-width: 600px) {
+      -webkit-box-shadow: 0 2px 3px var(--jrcolor-black);
+      -moz-box-shadow: 0 2px 3px var(--jrcolor-black);
+      box-shadow: 0 2px 3px var(--jrcolor-black);
+    }
+  }
+
+  .foto div:hover {
+    -webkit-box-shadow: 0 10px 20px var(--jrcolor-black);
+    -moz-box-shadow: 0 10px 20px var(--jrcolor-black);
+    box-shadow: 0 10px 20px var(--jrcolor-black);
+  }
+
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    box-shadow: 8px 10px 5px 0px var(--jrcolor-brown);
+
+    @media (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  section {
+    border-bottom: var(--jrcolor-darkyellow) 2px solid;
+  }
+
+  .section-title {
+    color: var(--jrcolor-yellow);
+  }
+
+  #foot {
+    background-color: var(--jrcolor-yellow);
+  }
+
+  .revision-text {
+    color: var(--jrcolor-darkblue);
+  }
+
+  .modal-inside .modal-content {
+    background-color: var(--jrcolor-lightgray);
+    color: var(--jrcolor-brown);
+  }
+
+  .jr-software-logo {
+    border: 5px solid var(--jrcolor-darkyellow);
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 4px 6px var(--jrcolor-brown);
+    -moz-box-shadow: 0px 4px 6px var(--jrcolor-brown);
+    box-shadow: 0px 4px 6px var(--jrcolor-brown);
+
+    @media (max-width: 600px) {
+      border: 2px solid var(--jrcolor-darkyellow);
+      -webkit-box-shadow: 0px 2px 3px var(--jrcolor-brown);
+      -moz-box-shadow: 0px 2px 3px var(--jrcolor-brown);
+      box-shadow: 0px 2px 3px var(--jrcolor-brown);
+    }
   }
 }

@@ -3,7 +3,7 @@ $cos45: 0.7071;
 $transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95);
 $slider-height-percentage: 60%;
 $slider-transition-duration: 575ms;
-$organic-arrow-color: #8c8c8c;
+$organic-arrow-color: var(--jrcolor-darkyellow);
 $organic-arrow-thickness: 4px;
 $organic-arrow-height: 40px;
 $organic-arrow-border-radius: 0;
@@ -12,11 +12,11 @@ $control-button-height: 25%;
 $control-button-opacity: 0.5;
 $control-button-hover-opacity: 0.75;
 $control-button-background: transparent;
-$loader-bar-color: #656565;
+$loader-bar-color: var(--jrcolor-brown);
 $loader-bar-height: 6px;
-$control-bullet-color: #8c8c8c;
-$control-bullet-active-color: #8c8c8c;
-$content-background-color: #8c8c8c;
+$control-bullet-color: var(--jrcolor-brown);
+$control-bullet-active-color: var(--jrcolor-darkgray);
+$content-background-color: var(--jrcolor-darkgray);
 
 %fill-parent {
   display: block;
@@ -275,8 +275,7 @@ $content-background-color: #8c8c8c;
       overflow: hidden;
       cursor: pointer;
       border: none;
-      transition:
-        transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45),
+      transition: transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45),
         background-color 0.175s ease-out;
 
       &:hover {
@@ -302,9 +301,7 @@ $content-background-color: #8c8c8c;
     height: var(--organic-arrow-height);
     position: relative;
     display: block;
-    transition:
-      transform 0.2s ease-out 0.125s,
-      opacity 0.2s ease-out;
+    transition: transform 0.2s ease-out 0.125s, opacity 0.2s ease-out;
     &:before,
     &:after {
       content: ' ';
@@ -320,9 +317,7 @@ $content-background-color: #8c8c8c;
       border-radius: var(--organic-arrow-border-radius);
       width: var(--organic-arrow-thickness);
       background-color: var(--organic-arrow-color);
-      transition:
-        transform 0.15s ease-out,
-        background-color 0.15s ease-out;
+      transition: transform 0.15s ease-out, background-color 0.15s ease-out;
     }
     &:before {
       transform-origin: 100% 100% 0;
