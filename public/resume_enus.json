@@ -218,6 +218,20 @@
   ],
   "experience": [
     {
+      "company": "Redmond Cycling Club",
+      "title": "Volunteer Web Master",
+      "icon": "fas fa-hands-helping",
+      "years": "2024",
+      "mainTech": ["SquareSpace", "Website", "Content Mgmt", "Collaboration"],
+      "technologies": [
+        "Manage RAMROD Team Content",
+        "HTML, JS, Markdown",
+        "Technical Support",
+        "SEO",
+        "Web Accessibility"
+      ]
+    },
+    {
       "company": "Destination Trail",
       "title": "HAM Team Lead Volunteer",
       "icon": "fas fa-hands-helping",
