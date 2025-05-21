@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
 
 export default function Footer({ sharedBasicInfo }) {
-  const revision = '16 October 2024';
+  const revision = '20 May 2025';
 
   if (sharedBasicInfo) {
     var networks = sharedBasicInfo.social.map(function (network) {
@@ -23,11 +23,18 @@ export default function Footer({ sharedBasicInfo }) {
         <div className='d-flex justify-content align-items-center'>
           {networks}
           <div className='m-4'>
-            <img
-              className='jr-software-logo'
-              src='images/jrsoftware-logo-128x128.png'
-              alt='JR Software'
-            />
+            <a
+              href='https://github.com/nojronatron'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                className='jr-software-logo'
+                src='images/jrsoftware-logo-128x128.png'
+                alt='JR Software'
+                aria-label='Nojronatrons GitHub Profile'
+              />
+            </a>
           </div>
         </div>
         <p className='m-4 revision-text'>
