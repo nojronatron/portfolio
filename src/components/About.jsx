@@ -25,7 +25,7 @@ export default function About({ resumeBasicInfo, portfolioData }) {
             <img
               src={profilepic}
               alt='Jon hiking near Mt.Rainier in Washington State, USA.'
-              className='rounded-4 profile-pic float-end'
+              className='profile-pic'
             />
             {about}
           </div>

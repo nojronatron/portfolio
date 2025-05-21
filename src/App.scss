@@ -180,6 +180,20 @@ header :link {
   }
 }
 
+.profile-pic {
+  float: right;
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 8px 10px 5px 0px var(--jrcolor-darkyellow);
+
+  @media (max-width: 600px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .modal-close {
   text-align: right;
   padding: 10px 15px 10px 15px;
