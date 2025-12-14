@@ -1,6 +1,6 @@
 {
   "editor.fontSize": 18,
-  "editor.fontFamily": "'Verdana', Monaspace, 'Arial', Consolas, 'sans-serif', monospace",
+  "editor.fontFamily": "'Cascadia Code', Verdana, Arial, Consolas, 'sans-serif', Monospace",
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
