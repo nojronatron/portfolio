@@ -8,7 +8,8 @@ This site began as a lab assignment while attending Code Fellows in Seattle, WA.
 
 - [Current Version](#current-version)
 - [Starter Code Source](#starter-code-source)
-- [Custom Updates](#custom-updates)
+- [Custom Code Updates](#custom-code-updates)
+- [GitHub Actions Updates](#github-actions-updates)
 - [Contributors](#contributors)
 
 ## Current Version ##
@@ -36,11 +37,22 @@ Check out the live site on [Netlify](https://portfolio-jon-rumsey.netlify.app).
 
 The starter code for this project was cloned from project [Dorota1997/react-frontend-dev-portfolio](https://github.com/Dorota1997/react-frontend-dev-portfolio), and customized from there. Thanks to Dorota Gil, great work!
 
-## Custom Updates ##
+## Custom Code Updates ##
 
 - Moved away from Create React App, replaced with Vite.
 - Moved files and updated JS files to JSX for Vite processing.
 - Fixed SCSS `@import` issues with `@use` or `stylesheet` refs in `index.html` instead.
+
+## GitHub Actions Updates ##
+
+Revision: 14-Dec-2025
+
+- Minimal GITHUB_TOKEN permissions (`contents: read`): restricts the token to read-only to follow least-privilege (mitigates CWE-275).
+- Use `npm ci` and project `devDependencies`: reproducible, lockfile-based installs are faster and keep CI consistent with local development.
+- Enable npm cache via `actions/setup-node` (`cache: 'npm'`): reduces network calls and speeds CI runs.
+- Remove explicit checkout `ref: ${{ github.head_ref }}` and use `fetch-depth: 0`: avoids incorrect ref checkout for push/PR events and allows full history when needed.
+- Add `concurrency` to cancel redundant runs: prevents duplicate lint jobs for the same ref and saves CI minutes.
+- Recommend pinning actions (or enable Dependabot for actions): pin to commit SHAs to reduce supply-chain risk (CWE-494); note this requires periodic maintenance or Dependabot automation.
 
 ## Contributors ##
 

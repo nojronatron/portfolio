@@ -6,6 +6,14 @@ on:
     branches:
       - main
 
+# Least privilege for GITHUB_TOKEN: only read repository contents.
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   eslint:
     runs-on: ubuntu-latest
@@ -14,16 +22,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
-      
-      - name: Setup NodeJS
+          fetch-depth: 0
+
+      - name: Setup NodeJS (with npm cache)
         uses: actions/setup-node@v4
         with:
-            node-version: '20'
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
-      - name: Install ESLint
+      - name: Install dependencies
+        # Use lockfile-based install for reproducibility; ESLint should be in devDependencies
         run: |
-          npm install eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh
+          npm ci
 
       - name: Run ESLint
         run: |
