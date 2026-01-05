@@ -12,7 +12,41 @@ This site began as a lab assignment while attending Code Fellows in Seattle, WA.
 - [GitHub Actions Updates](#github-actions-updates)
 - [Contributors](#contributors)
 
+## Build, Dev, Run ##
+
+Recommend using CodeSpaces or a Linux-based container built for NPM/Node.js environment to simplify setup and maintenance.
+
+1. Clone repo: `git clone https://github.com/nojronatron/portfolio.git`
+2. CD to repo root: `cd ./portfolio`
+3. Install dependencies: `npm i`
+4. Build, preview, dev, or debug build (see below).
+
+Dev, Build, Preview options:
+
+- Start dev server: `npm run dev`
+- Build for production: `npm run build`
+- Preview production build: `npm run preview`
+- Execute ESLint: `npm run lint`
+
+## VSCode Extensions ##
+
+Recommended VS Code extensions are set in `./.vscode/extensions.json`:
+
+- GitHub Actions.
+
 ## Current Version ##
+
+[v1.1.0] - January-2026
+
+- Add Winlink Template, Forms Training class delivery.
+
+[v1.0.3] - Throughout-2024
+
+- Various Dependabot patches: Vite, ESBuild, Babel, globals, bootstrap, react, sass.
+- Remove unused, deprecated packages.
+- Update About page.
+- Patch VSCode settings.
+- Patch workflow permissions.
 
 [v1.0.0] - 16-October-2024
 
@@ -60,6 +94,7 @@ Content Creator, UX and Accessibility Design, JS/React Developer, Test Engineer,
 
 This site uses [Iconify-React](https://iconify.design/) for some language and tools icons.
 
-This site also uses free versions of [FontAwesome v.5 Icons](https://fontawesome.com/v5/search)
+This site also uses free versions of:
 
-Dev Icons ~~are~~ were courtesy of [Devicon.dev](https://devicon.dev) (thanks, it was fun while it lasted).
+- [FontAwesome v.5 Icons](https://fontawesome.com/v5/search)
+- [Devicons](https://devicon.dev/)
