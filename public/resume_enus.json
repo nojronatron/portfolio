@@ -1,15 +1,16 @@
 {
   "basic_info": {
-    "description_header": "Hi, I'm Jon",
+    "description_header": "👋  Hi I'm Jon, a software developer and .NET enthusiast.  👋",
     "description": [
-      "👋  I am a Software Developer with experience in software testing, systems administration, project planning and team leadership. I began my career in technology as a Helpdesk Associate, then as a Computer Lab Technician, and later as a Windows Systems Administrator. While earning a Associate Degree in Network Technologies, I created a computer asset-tracking database tool for the campus IT team that helped track computers and forecast budget needs.",
-      "Later, as a Systems Administrator at Citrix Systems, I managed the computer lab hardware, data storage, and network systems. Through collaboration with a software developer I helped design and deploy a hardware management tool that increased computer lab equipment utilization and simplified budget forecasting for the team's leadership. I also built-out dev and test team environments on hardware, hypervisors and Azure, reducing time-to-deploy for dev and test activities. ",
-      "I acquired bids for electrical work and network upgrades, and implemented routing and VLAN technologies to support secure dev and production systems network performance. As an Systems Admin of a globally reaching Active Directory deployment, I was responsible for network operations supporting the Engineering teams. I took the lead on several occasions to push for implementation of new features, solving issues affecting users globally, and upgrading services like SharePoint, improving user experience and productivity.",
-      "Working in an advanced software development group, coupled with my growing experiences with PowerShell, I earned a certification in Software Test Engineering from Bellevue College where I picked up Python, C#, Git, SQL, and agile software development processes. Soon after, I moved into a software testing role at Citrix, designing test plans, executing tests, submitted concrete yet succinct bug reports, and validating bug-fixes on multiple projects, simultaneously. I developed automated build-and-deploy scripts using PowerShell, and created one-button-execution UI testing using Selenium Driver and Python, detecting UI bugs and allowing more time for continued Lab Manager and Systems Admin tasks completion. ",
-      "I returned to Bellevue College to complete C# Programming training and started to enjoy working with object-oriented, stronly-typed languages. Wanting to go further, I earned a certificate in Advanced Software Development in Java from Code Fellows in Seattle, WA, where I learned how to build full-stack Web Apps using HTML, CSS, JS, React, Express, SQL and No-SQL databases, as well as collaborative software development techniques including pair-programming and use of agile tools like Trello and Miro to design solutions and manage development progress.",
-      "In between classes and projects I applied my skills to my ham radio hobby by building radio-interfacing electronics and developing software to capture and transform data. For example, I made improvements and added specific, necessary features to an existing web-based form that radio operators use to transmit urgent, emergent, or logistical messages via 'email over ham radio'. I updated the UI for simplicity and accessibility including those with limited vision and limited mobility users, and refactored the code to be clean and easily readable. ",
-      "In late 2022, I met an enthusiastic React developer and we jointly designed, developed, and bug tested a React SPA using common software development tools and technique, all while completely remote from each other. This project is a web-based Bingo game that allows a presenter to create a custom Bingo board and share a link to the board with their audience. The audience can then play Bingo by clicking on the board's squares to mark them as 'called'. The presenter can see the audience's boards and can call out the next square to be marked. The project is currently in development to be a full-stack app, published to Netlify and Azure App Services.",
-      "I enjoy developing software solutions for web and desktop, working with engaging people, and finding solutions that make sense for the context of the end user. I look forward to working on a diverse software development team creating and refining technical solutions and delighting customers. 👋"
+      "I am a Software Developer with experience in software testing, systems administration, project planning, and team leadership.",
+      "I began my career in technology as a Helpdesk Associate, moving up to a Computer Lab Technician, and later as a Windows Systems Administrator.",
+      "While earning my AAS in Network Technologies I created an asset-tracking database tool for the campus IT, which helped them track asset lifecycle and budget forecasting.",
+      "As a Systems Administrator at Citrix Systems, I managed the computer lab hardware, data storage, and network systems for a small developer lab. At the time the computer lab needed better management of resource sharing for developers to effectively perform their duties. So in conjunction with one of the software developers I helped design and deploy a hardware management tool that improved lab equipment utilization, and provided insight into asset sharing and lifecycle.",
+      "Facilities and IT were both off-site so I was largely responsible for managing electrical, cooling, and asset maintenance and upgrades, acquiring bids for work and managing lifecycle and budget forecasting. Other accomplishments include deploying, managing, and maintaining a globally accessible SharePoint site for the Engineering group.",
+      "As I gained more interest in engineering, I earned a certification in Software Test Engineering from Bellevue College where I picked up some experience with Python, C#, Git, SQL, and agile software development processes. Soon after, I moved into a software testing role at Citrix, designing test plans, executing and reporting on test/bug status, and contributing concrete, succinct bug report on locally developed software. During this time I also developed automated build-and-deploy scripts using PowerShell, and created a custom double-click-to-run UI testing system using Selenium Driver and Python.",
+      "My thirst for learning continued and I earned a certificate in Advanced Software Development in Java from Code Fellows in Seattle, WA. Many long days and nights were spent learning HTML 5, CSS, and JavaScript, the MERN stack, as well as Java and Spring Boot framework. In addition, I picked up experience in agile software development, managing git repositories, and was introduced to team and software project management. Many days of collaborative software development provided a solid foundation with techniques like pair-programming and use of tools like Trello Miro for project management and design.",
+      "I enjoy developing software solutions for web and desktop, working with engaging people, and finding solutions that make sense for the context of the end user. I look forward to working on a diverse software development team creating and refining technical solutions that delight customers.",
+      "When I'm not working on software projects, I can be found out riding my bike, or volunteering with groups like the National MS Society, Destination Trail, Snohomish County DEM, and Redmond Cycling Club."
     ],
     "section_name": {
       "about": "About",
@@ -21,6 +22,33 @@
     }
   },
   "projects": [
+    {
+      "title": "Winlink Forms Training",
+      "startDate": "Jan 2025",
+      "description": "A colleague asked me to teach his team of ham radio volunteers how to create custom Winlink Templates and Forms. The goal was to prepare them to create custom forms for capturing and sharing situational awareness information with local ham radio stations, and to the Seattle Office of Emergency Management.\nI developed the curriculum and training modules, and presented a slide deck and guided hands-on coding with a group of 1/2 dozen attendees.",
+      "images": [
+        "images/portfolio/wl-training-jan-26/none.jpg"
+      ],
+      "url": "https://nojronatron.github.io/wl-forms-training/",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain colored",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-html5-plain-wordmark colored",
+          "name": "HTML 5"
+        },
+        {
+          "class": "devicon-css3-plain-wordmark colored",
+          "name": "CSS 3.0"
+        },
+        {
+          "name": "VS Code",
+          "icon": "vscode-icons:file-type-vscode"
+        }
+      ]
+    },
     {
       "title": "BF-BMX",
       "startDate": "2024",
@@ -74,10 +102,12 @@
       ]
     },
     {
-      "title": "LingoBing JS",
+      "title": "LingoBingo JS",
       "startDate": "2022",
       "description": "Working in our spare time, Ryan Shafer and I re-wrote the LingoBingo project using React. We are are finishing up the first part of a v.1 release that implements MERN-stack design pattern, and will follow that with an add-on UI for Presenters to add their own words and generate a web-link to their custom-defined LingoBingo boards.",
-      "images": ["images/portfolio/lbjs/lbjs-lets-play-bingo.jpg"],
+      "images": [
+        "images/portfolio/lbjs/lbjs-lets-play-bingo.jpg"
+      ],
       "url": "https://eb-lingobingo.netlify.app/",
       "technologies": [
         {
@@ -177,7 +207,9 @@
       "title": "LingoBingo",
       "startDate": "2019",
       "description": "One of the first web apps I worked on using C# DotNET Blazor Web Assembly. The original idea came from a webinar on audience engagement by Cindy Huggett, where she suggested presenters play Buzzword Bingo so audience members could yell BINGO when they match 5 presenter-planned buzzwords in a row. The project has been through many version, from Console application to what it is now - a live, playable Azure WebApp. I learned a lot about C#, Dot NET, and web development, which made it clear to me I wanted to learn more about building capable, fun websites!",
-      "images": ["images/portfolio/LingoBingo/LingoBingo screenshot.jpg"],
+      "images": [
+        "images/portfolio/LingoBingo/LingoBingo screenshot.jpg"
+      ],
       "url": "https://bit.ly/3lgqSWe",
       "technologies": [
         {
@@ -222,7 +254,12 @@
       "title": "Volunteer Web Master",
       "icon": "fas fa-hands-helping",
       "years": "2024",
-      "mainTech": ["SquareSpace", "Website", "Content Mgmt", "Collaboration"],
+      "mainTech": [
+        "SquareSpace",
+        "Website",
+        "Content Mgmt",
+        "Collaboration"
+      ],
       "technologies": [
         "Manage RAMROD Team Content",
         "HTML, JS, Markdown",
@@ -236,7 +273,12 @@
       "title": "HAM Team Lead Volunteer",
       "icon": "fas fa-hands-helping",
       "years": "2016 - 2024",
-      "mainTech": ["Software", "Communications", "Team Lead", "Planning"],
+      "mainTech": [
+        "Software",
+        "Communications",
+        "Team Lead",
+        "Planning"
+      ],
       "technologies": [
         "Effective HAM Communications",
         "Planning and Logistics",
@@ -252,7 +294,12 @@
       "title": "Supplies and Gear HAM",
       "icon": "fas fa-hands-helping",
       "years": "2013 - 2024",
-      "mainTech": ["Communications Infra", "Safety", "Support", "Planning"],
+      "mainTech": [
+        "Communications Infra",
+        "Safety",
+        "Support",
+        "Planning"
+      ],
       "technologies": [
         "HAM Communications and SME",
         "Network and Comms Infrastructure",
@@ -268,7 +315,12 @@
       "title": "Radio Comms and Logistics Volunteer",
       "icon": "fas fa-hands-helping",
       "years": "2013 - 2024",
-      "mainTech": ["Logistics", "Communications", "Safety", "Support"],
+      "mainTech": [
+        "Logistics",
+        "Communications",
+        "Safety",
+        "Support"
+      ],
       "technologies": [
         "HAM Communications",
         "Planning and Logistics",
@@ -282,7 +334,13 @@
       "title": "Software Test Engineer II",
       "icon": "fas fa-laptop-code",
       "years": "April 2014 - July 2017",
-      "mainTech": ["Tests", "Planning", "Reporting", "Bugs", "Domain Admin"],
+      "mainTech": [
+        "Tests",
+        "Planning",
+        "Reporting",
+        "Bugs",
+        "Domain Admin"
+      ],
       "technologies": [
         "Visual Studio",
         "PyCharm",
@@ -299,7 +357,11 @@
       "title": "Engineering Sys Admin II",
       "icon": "fas fa-laptop-code",
       "years": "2006 - 2014",
-      "mainTech": ["Manage Lab", "LAN Admin", "Active Directory Admin"],
+      "mainTech": [
+        "Manage Lab",
+        "LAN Admin",
+        "Active Directory Admin"
+      ],
       "technologies": [
         "Windows Server",
         "PowerShell",
@@ -315,7 +377,11 @@
       "title": "Computer Lab Tech",
       "icon": "fas fa-network-wired",
       "years": "2004 - 2006",
-      "mainTech": ["Build, Maintain PCs", "Maintain Lab", "Manage LAN"],
+      "mainTech": [
+        "Build, Maintain PCs",
+        "Maintain Lab",
+        "Manage LAN"
+      ],
       "technologies": [
         "Windows Server",
         "Windows Desktop",
@@ -330,7 +396,10 @@
       "title": "Helpdesk Support",
       "icon": "fas fa-briefcase",
       "years": "2003, 2004",
-      "mainTech": ["Staff, Student Tech Spprt", "IT generalist"],
+      "mainTech": [
+        "Staff, Student Tech Spprt",
+        "IT generalist"
+      ],
       "technologies": [
         "Technical Support",
         "Helpdesk Application",
