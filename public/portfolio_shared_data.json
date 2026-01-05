@@ -98,6 +98,32 @@
         "name": "NoSQL",
         "icon": "mdi:code-json"
       }
+    ],
+    "frameworks": [
+      {
+        "name": ".NET Framework",
+        "icon": "tbd"
+      },
+      {
+        "name": ".NET Core",
+        "icon": "tbd"
+      },
+      {
+        "name": "ASP.NET Core Blazor",
+        "icon": "tbd"
+      },
+      {
+        "name": "React",
+        "icon": "tbd"
+      },
+      {
+        "name": "Vite",
+        "icon": "tbd"
+      },
+      {
+        "name": "Spring",
+        "icon": "tbd"
+      }
     ]
   }
 }
